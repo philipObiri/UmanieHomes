@@ -28,9 +28,9 @@ def _base_html(title: str, body_html: str) -> str:
 
       <!-- Header -->
       <tr>
-        <td style="background:{BRAND_DARK};padding:28px 40px;text-align:center;">
-          <p style="margin:0;font-size:22px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">{BRAND_NAME}</p>
-          <div style="width:40px;height:3px;background:{BRAND_GOLD};margin:10px auto 0;border-radius:2px;"></div>
+        <td style="background:{BRAND_DARK};padding:24px 40px;text-align:center;">
+          <img src="{BRAND_SITE}/main_logo.png" alt="{BRAND_NAME}" style="height:56px;width:auto;object-fit:contain;" />
+          <div style="width:40px;height:3px;background:{BRAND_GOLD};margin:12px auto 0;border-radius:2px;"></div>
         </td>
       </tr>
 

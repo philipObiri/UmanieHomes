@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useTenantStore } from '../../stores/tenantStore';
-import uhaLogo from '../../assets/UHA-Logo-03.jpg.jpeg';
+const uhaLogo = '/main_logo.png';
 
 const quickLinks = [
   { label: 'Browse Properties', to: '/listings' },

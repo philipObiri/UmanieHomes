@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTenantStore } from '../../stores/tenantStore';
 import { useAuthStore } from '../../stores/authStore';
-import uhaLogo from '../../assets/UHA-Logo-03.jpg.jpeg';
+const uhaLogo = '/main_logo.png';
 
 const navLinks = [
   { label: 'Home', to: '/' },

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import uhaLogo from '../../assets/UHA-Logo-03.jpg.jpeg';
+const uhaLogo = '/main_logo.png';
 import { Outlet, Link, useLocation, useNavigate, ScrollRestoration } from 'react-router-dom';
 import {
   LayoutDashboard, Building2, Users, Headphones,
