@@ -1,0 +1,110 @@
+[
+  {
+    "id": "faq-001",
+    "category": "Buying",
+    "question": "What is the typical process for buying a luxury property with Umanie Homes?",
+    "answer": "Our buying process begins with an initial consultation to understand your needs and budget. We then curate a selection of properties matching your criteria, arrange viewings, assist with negotiations, coordinate due diligence and legal reviews, and guide you through to closing. Throughout the process, your dedicated agent is available to answer questions and ensure a smooth transaction."
+  },
+  {
+    "id": "faq-002",
+    "category": "Buying",
+    "question": "Can foreigners buy property in African countries?",
+    "answer": "Property ownership laws vary by country. In Ghana, Kenya, and Tanzania, foreigners can own property but may face restrictions on land ownership (leasehold vs. freehold). In Nigeria, foreign nationals can own property in most states. Rwanda welcomes foreign investment in real estate. Our team provides detailed guidance on regulations specific to each country and handles all legal requirements."
+  },
+  {
+    "id": "faq-003",
+    "category": "Buying",
+    "question": "What are the typical closing costs and fees?",
+    "answer": "Closing costs typically include legal fees (1-2% of property value), registration fees, stamp duty (varies by country, typically 1-5%), agent commission (usually paid by seller), and survey costs. In Ghana, expect 2-3% in total costs; Nigeria 3-5%; Kenya 4-6%. We provide a detailed breakdown during the offer stage so there are no surprises."
+  },
+  {
+    "id": "faq-004",
+    "category": "Financing",
+    "question": "Do you assist with mortgage financing?",
+    "answer": "Yes, we work with leading banks and financial institutions across Africa that offer mortgage products for luxury properties. We can connect you with mortgage advisors who specialize in high-value property financing. Interest rates and terms vary by country and institution, typically ranging from 12-18% in most markets."
+  },
+  {
+    "id": "faq-005",
+    "category": "Financing",
+    "question": "What is the typical down payment required?",
+    "answer": "For luxury properties, most lenders require a down payment of 30-40% of the property value. Some banks may require up to 50% for non-resident buyers. Cash purchases are common in the luxury segment. We can advise on financing options tailored to your situation."
+  },
+  {
+    "id": "faq-006",
+    "category": "Selling",
+    "question": "How do you determine the listing price for my property?",
+    "answer": "We conduct a comprehensive market analysis comparing your property to recent sales of similar properties in your area, considering location, size, features, condition, and current market trends. We also factor in unique selling points and any recent upgrades. Our goal is to price competitively while maximizing your return."
+  },
+  {
+    "id": "faq-007",
+    "category": "Selling",
+    "question": "What is your commission structure?",
+    "answer": "Our standard commission for selling luxury properties is 5% of the sale price, typically paid by the seller at closing. This covers professional photography, marketing, listing on major platforms, viewings, negotiations, and transaction management. We believe our comprehensive service delivers exceptional value and results."
+  },
+  {
+    "id": "faq-008",
+    "category": "Selling",
+    "question": "How long does it typically take to sell a luxury property?",
+    "answer": "The luxury market moves differently than standard residential properties. Well-priced luxury homes typically sell within 3-6 months. Factors affecting timeline include property location, price point, condition, and current market conditions. Our targeted marketing to qualified buyers and extensive network helps expedite the process."
+  },
+  {
+    "id": "faq-009",
+    "category": "Investment",
+    "question": "What are typical rental yields for luxury properties?",
+    "answer": "Rental yields vary by location and property type. In Accra and Lagos, luxury properties typically yield 4-6% annually. Nairobi and Kampala see yields of 5-7%. Cape Town ranges from 5-8%. These figures are gross yields before expenses. Our investment advisors can provide detailed projections for specific properties."
+  },
+  {
+    "id": "faq-010",
+    "category": "Investment",
+    "question": "Do you offer property management services?",
+    "answer": "Yes, we offer comprehensive property management for investors and landlords. Services include tenant screening, rent collection, maintenance coordination, regular inspections, and financial reporting. Our management fee is typically 10% of monthly rent. We ensure your investment is well-maintained and generates optimal returns."
+  },
+  {
+    "id": "faq-011",
+    "category": "Investment",
+    "question": "Which African cities offer the best investment opportunities?",
+    "answer": "Several cities show strong potential: Accra and Lagos for West Africa's growing economy, Nairobi and Kigali for East Africa's stability and growth, and Cape Town for international appeal. Emerging opportunities exist in Dar es Salaam and Abidjan. We recommend diversifying and choosing markets aligned with your investment goals and risk tolerance."
+  },
+  {
+    "id": "faq-012",
+    "category": "Legal",
+    "question": "What due diligence is conducted on properties?",
+    "answer": "We conduct thorough due diligence including title verification, property survey confirmation, outstanding debt check, planning permission verification for any alterations, review of property tax records, and inspection for structural issues. We engage qualified surveyors and lawyers to ensure you're making a safe investment."
+  },
+  {
+    "id": "faq-013",
+    "category": "Legal",
+    "question": "How long does the legal process take?",
+    "answer": "The legal process typically takes 4-8 weeks from accepted offer to closing. This includes title searches, preparation of sale agreements, mortgage approval (if applicable), and final registration. Timelines vary by country and complexity. We work closely with experienced real estate attorneys to expedite the process."
+  },
+  {
+    "id": "faq-014",
+    "category": "Legal",
+    "question": "What documentation do I need as a buyer?",
+    "answer": "Required documents typically include: valid passport or national ID, proof of address (utility bill), proof of funds or mortgage pre-approval, tax identification number, and for foreigners, visa/residence permit. Corporate buyers need company registration documents and board resolutions. We provide a complete checklist at the start of your journey."
+  },
+  {
+    "id": "faq-015",
+    "category": "Viewings",
+    "question": "Can you arrange virtual viewings for international clients?",
+    "answer": "Absolutely! We offer comprehensive virtual tours including live video walkthroughs, 360-degree photography, detailed video presentations, and one-on-one video consultations with agents. We can arrange viewings at times convenient for your timezone. Many international clients complete purchases sight-unseen with confidence."
+  },
+  {
+    "id": "faq-016",
+    "category": "Viewings",
+    "question": "How many properties should I view before making a decision?",
+    "answer": "Most buyers view 5-8 properties before finding the right one. However, when we've carefully curated selections based on your specific criteria, clients often find their perfect property within the first 3-4 viewings. We focus on quality over quantity to respect your time."
+  },
+  {
+    "id": "faq-017",
+    "category": "General",
+    "question": "What makes Umanie Homes different from other real estate agencies?",
+    "answer": "We specialize exclusively in luxury properties across Africa, bringing unmatched regional expertise. Our agents are carefully selected for their market knowledge and professionalism. We offer personalized service, leveraging technology for efficiency while maintaining the human touch. Our extensive network and discretion set us apart in the luxury segment."
+  },
+  {
+    "id": "faq-018",
+    "category": "General",
+    "question": "Do you handle commercial properties?",
+    "answer": "While our primary focus is residential luxury properties, we do assist select clients with commercial investments, particularly mixed-use developments, boutique office buildings, and hospitality properties. Contact us to discuss your commercial real estate needs."
+  }
+]

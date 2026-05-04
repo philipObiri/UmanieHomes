@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umanie Homes | Luxury African Real Estate</title>
+    <meta name="description" content="Discover luxury properties across Africa's most prestigious locations. Expert real estate agents, premium homes, and unmatched service.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components/navigation.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/forms.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/price-slider.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
+    <link rel="stylesheet" href="css/components/toast.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/back-to-top.css">
+    <link rel="stylesheet" href="css/components/whatsapp-bubble.css">
+    <link rel="stylesheet" href="css/components/custom-cursor.css">
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="logo">UMANIE<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/listings.html">Properties</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/team.html">Team</a></li>
+            <li><a href="pages/insights.html">Insights</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="pages/contact.html" class="btn btn-primary" style="padding: 10px 20px;">Book Tour</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/listings.html">Properties</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/team.html">Team</a></li>
+            <li><a href="pages/insights.html">Insights</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobile-menu-backdrop"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Luxury African Real Estate</h1>
+                <p>Discover premium properties across the continent's most prestigious locations.</p>
+
+                <div class="search-bar">
+                    <div class="search-field">
+                        <label>Location</label>
+                        <select>
+                            <option>All Cities</option>
+                            <option>Accra, Ghana</option>
+                            <option>Lagos, Nigeria</option>
+                            <option>Nairobi, Kenya</option>
+                            <option>Cape Town, South Africa</option>
+                            <option>Kigali, Rwanda</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>Property Type</label>
+                        <select>
+                            <option>All Types</option>
+                            <option>Villa</option>
+                            <option>Penthouse</option>
+                            <option>Mansion</option>
+                            <option>Townhouse</option>
+                            <option>Apartment</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>Max Price</label>
+                        <div class="hero-price-slider">
+                            <input type="range" id="heroPriceSlider" min="100000" max="5000000" step="100000" value="2000000">
+                            <div class="price-display">Up to <span id="heroPriceDisplay">$2,000,000</span></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="heroSearchBtn">Search Now</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services Section -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <div class="divider-gold"></div>
+                <p class="section-subtitle">Comprehensive real estate solutions tailored to your luxury lifestyle</p>
+            </div>
+
+            <div class="container">
+                <div class="grid grid-3">
+                    <div class="info-card reveal-scale reveal-delay-1">
+                        <div class="icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Buy Property</h3>
+                        <p>Find your dream home from our curated selection of luxury properties across Africa's finest locations.</p>
+                    </div>
+
+                    <div class="info-card reveal-scale reveal-delay-2">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3>Sell Property</h3>
+                        <p>Get maximum value for your property with our expert marketing and extensive buyer network.</p>
+                    </div>
+
+                    <div class="info-card reveal-scale reveal-delay-3">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Invest Wisely</h3>
+                        <p>Strategic investment advice to build and manage your luxury real estate portfolio.</p>
+                    </div>
+
+                    <div class="info-card reveal-scale reveal-delay-4">
+                        <div class="icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Property Management</h3>
+                        <p>Comprehensive property management services ensuring your investment remains in pristine condition.</p>
+                    </div>
+
+                    <div class="info-card reveal-scale reveal-delay-5">
+                        <div class="icon">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <h3>Property Valuation</h3>
+                        <p>Professional property appraisal services to determine accurate market value for your luxury assets.</p>
+                    </div>
+
+                    <div class="info-card reveal-scale reveal-delay-6">
+                        <div class="icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Consultation Services</h3>
+                        <p>Expert guidance on market trends, legal requirements, and investment opportunities across Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties Section -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2 class="section-title">Featured Properties</h2>
+                <div class="divider-gold"></div>
+                <p class="section-subtitle">Handpicked luxury homes in Africa's most exclusive neighborhoods</p>
+            </div>
+
+            <div class="container">
+                <div class="grid grid-3" id="featuredProperties">
+                    <!-- Properties will be loaded dynamically -->
+                    <div class="card skeleton">
+                        <div class="skeleton-image"></div>
+                        <div class="card-content">
+                            <div class="skeleton-text"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div class="card skeleton">
+                        <div class="skeleton-image"></div>
+                        <div class="card-content">
+                            <div class="skeleton-text"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                    <div class="card skeleton">
+                        <div class="skeleton-image"></div>
+                        <div class="card-content">
+                            <div class="skeleton-text"></div>
+                            <div class="skeleton-text"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 50px;">
+                    <a href="pages/listings.html" class="btn btn-outline btn-lg">View All Properties</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="section stats-section" style="background: linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-navy) 100%); color: white; padding: 80px 7%;">
+            <div class="container">
+                <div class="grid stats-grid" style="grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                    <div class="stats-card reveal-scale reveal-delay-1">
+                        <div class="stat-number" data-counter data-target="500">0</div>
+                        <div class="stat-label">Properties Sold</div>
+                    </div>
+
+                    <div class="stats-card reveal-scale reveal-delay-2">
+                        <div class="stat-number" data-counter data-target="1200">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+
+                    <div class="stats-card reveal-scale reveal-delay-3">
+                        <div class="stat-number" data-counter data-target="8">0</div>
+                        <div class="stat-label">African Countries</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="divider-gold"></div>
+                <p class="section-subtitle">Hear from our satisfied clients across the continent</p>
+            </div>
+
+            <div class="container">
+                <div class="carousel carousel-testimonials" data-carousel data-autoplay="true" data-interval="6000">
+                    <div class="carousel-track" id="testimonialsCarousel">
+                        <!-- Testimonials will be loaded dynamically -->
+                        <div class="carousel-slide">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-quote skeleton-text"></p>
+                                <div class="skeleton-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section reveal" style="background: var(--card-bg); padding: 60px 7%;">
+            <div class="container text-center">
+                <h2 style="font-size: 2rem; margin-bottom: 15px;">Stay Updated</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Subscribe to our newsletter for exclusive property listings, market insights, and luxury real estate trends.
+                </p>
+
+                <form class="newsletter-form" data-validate id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Enter your email address" required>
+                        <div class="form-error"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-column">
+                <h3>Umanie Homes</h3>
+                <p>Africa's premier luxury real estate platform, connecting discerning clients with exceptional properties across the continent's most prestigious locations.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="pages/listings.html"><i class="fas fa-chevron-right"></i> Browse Properties</a></li>
+                    <li><a href="pages/about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="pages/team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="pages/insights.html"><i class="fas fa-chevron-right"></i> Market Insights</a></li>
+                    <li><a href="pages/gallery.html"><i class="fas fa-chevron-right"></i> Property Gallery</a></li>
+                    <li><a href="pages/contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Locations</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Accra, Ghana</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+233245550101">+233 24 555 0101</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@umaniehomes.com">info@umaniehomes.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>East Legon, Accra, Ghana</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                &copy; 2025 <a href="index.html">Umanie Homes</a>. All rights reserved.
+            </p>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Combined App Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>

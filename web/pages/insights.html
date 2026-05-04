@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real estate insights, market trends, and property news - Umanie Homes Africa">
+    <title>Insights & News | Umanie Homes</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/components/page-header.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/badges.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/back-to-top.css">
+    <link rel="stylesheet" href="../css/components/whatsapp-bubble.css">
+    <link rel="stylesheet" href="../css/components/custom-cursor.css">
+
+    <style>
+        .insights-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-weight: var(--fw-medium);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            font-family: inherit;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-gold);
+            border-color: var(--accent-gold);
+            color: white;
+        }
+
+        .featured-article {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 40px;
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: 60px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .featured-image {
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .featured-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: white;
+            padding: 6px 16px;
+            border-radius: var(--radius);
+            font-size: 0.75rem;
+            font-weight: var(--fw-bold);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+
+        .featured-content h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .article-meta i {
+            color: var(--accent-gold);
+        }
+
+        .featured-content .excerpt {
+            color: var(--text-secondary);
+            line-height: var(--lh-relaxed);
+            margin-bottom: 25px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .article-image {
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .article-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--accent-gold);
+            color: white;
+            padding: 6px 12px;
+            border-radius: var(--radius);
+            font-size: 0.75rem;
+            font-weight: var(--fw-semibold);
+            text-transform: uppercase;
+        }
+
+        .article-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .article-content h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition-fast);
+        }
+
+        .article-content h3 a:hover {
+            color: var(--accent-gold);
+        }
+
+        .article-excerpt {
+            color: var(--text-secondary);
+            line-height: var(--lh-relaxed);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .article-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .author-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: var(--radius-round);
+            background: var(--accent-gold);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: var(--fw-bold);
+        }
+
+        .read-time {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @media (max-width: 968px) {
+            .featured-article {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-image {
+                height: 300px;
+            }
+
+            .featured-content {
+                padding: 30px;
+            }
+
+            .articles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="logo">UMANIE<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="listings.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="insights.html" class="active">Insights</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px;">Book Tour</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="listings.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobile-menu-backdrop"></div>
+
+    <!-- Page Header -->
+    <header class="page-header insights-header">
+        <div class="page-header-content">
+            <h1>Insights & News</h1>
+            <p>Expert analysis, market trends, and industry updates</p>
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Insights</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="section">
+            <div class="container">
+                <!-- Featured Article -->
+                <div id="featuredArticle"></div>
+
+                <!-- Filters -->
+                <div class="insights-filters">
+                    <button class="filter-btn active" data-category="all">All Articles</button>
+                    <button class="filter-btn" data-category="Market Analysis">Market Analysis</button>
+                    <button class="filter-btn" data-category="Investment">Investment</button>
+                    <button class="filter-btn" data-category="Lifestyle">Lifestyle</button>
+                </div>
+
+                <!-- Articles Grid -->
+                <div class="articles-grid" id="articlesGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-column">
+                <h3>Umanie Homes</h3>
+                <p>Africa's premier luxury real estate platform, connecting discerning clients with exceptional properties across the continent's most prestigious locations.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="listings.html"><i class="fas fa-chevron-right"></i> Browse Properties</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="insights.html"><i class="fas fa-chevron-right"></i> Market Insights</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Property Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Locations</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Accra, Ghana</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+233245550101">+233 24 555 0101</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@umaniehomes.com">info@umaniehomes.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>East Legon, Accra, Ghana</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2025 Umanie Homes Africa. All rights reserved.
+            </div>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Bubble -->
+    <div class="whatsapp-bubble">
+        <button class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+        <div class="whatsapp-tooltip">Chat with us!</div>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/insights.js"></script>
+</body>
+</html>

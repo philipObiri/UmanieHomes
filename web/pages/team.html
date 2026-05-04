@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the Umanie Homes Africa team - Expert luxury real estate professionals">
+    <title>Our Team | Umanie Homes</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/components/page-header.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/back-to-top.css">
+    <link rel="stylesheet" href="../css/components/whatsapp-bubble.css">
+    <link rel="stylesheet" href="../css/components/custom-cursor.css">
+
+    <style>
+        .team-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius);
+            color: var(--text-primary);
+            font-weight: var(--fw-medium);
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-gold);
+            border-color: var(--accent-gold);
+            color: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .team-member-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .team-member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .member-photo {
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-photo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+        }
+
+        .member-social {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 2;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .team-member-card:hover .member-social {
+            opacity: 1;
+        }
+
+        .member-social a {
+            width: 40px;
+            height: 40px;
+            background: white;
+            color: var(--brand-navy);
+            border-radius: var(--radius-round);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-fast);
+        }
+
+        .member-social a:hover {
+            background: var(--accent-gold);
+            color: white;
+        }
+
+        .member-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            font-weight: var(--fw-bold);
+            margin-bottom: 5px;
+        }
+
+        .member-title {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .member-location {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--bg-color);
+            border-radius: var(--radius);
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            margin-top: 10px;
+        }
+
+        .join-team-section {
+            background: linear-gradient(135deg, var(--brand-deep), var(--brand-navy));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .join-team-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .join-team-section p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .member-photo {
+                height: 300px;
+            }
+
+            .team-filters {
+                gap: 10px;
+            }
+
+            .filter-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .member-photo {
+                height: 280px;
+            }
+
+            .join-team-cta {
+                padding: 60px 20px;
+            }
+
+            .join-team-cta h2 {
+                font-size: 1.8rem;
+            }
+
+            .join-team-cta p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .member-photo {
+                height: 250px;
+            }
+
+            .member-info {
+                padding: 20px;
+            }
+
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="logo">UMANIE<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="listings.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html" class="active">Team</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px;">Book Tour</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="listings.html">Properties</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobile-menu-backdrop"></div>
+
+    <!-- Page Header -->
+    <header class="page-header team-header">
+        <div class="page-header-content">
+            <h1>Meet Our Team</h1>
+            <p>Expert professionals dedicated to your real estate success</p>
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Team</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Team Members -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Expert Team</h2>
+                    <div class="divider-gold"></div>
+                    <p class="section-subtitle">Meet the professionals who make your property dreams a reality</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="team-filters">
+                    <button class="filter-btn active" data-location="all">All Locations</button>
+                    <button class="filter-btn" data-location="Accra">Accra</button>
+                    <button class="filter-btn" data-location="Lagos">Lagos</button>
+                    <button class="filter-btn" data-location="Nairobi">Nairobi</button>
+                    <button class="filter-btn" data-location="Cape Town">Cape Town</button>
+                </div>
+
+                <!-- Team Grid -->
+                <div class="team-grid" id="teamGrid"></div>
+            </div>
+        </section>
+
+        <!-- Join Team CTA -->
+        <section class="join-team-section">
+            <div class="container">
+                <h2>Join Our Growing Team</h2>
+                <p>We're always looking for talented, passionate professionals to join Africa's premier luxury real estate firm. If you're driven by excellence and committed to delivering exceptional service, we'd love to hear from you.</p>
+                <a href="contact.html" class="btn btn-primary" style="background: white; color: var(--brand-navy);">
+                    View Career Opportunities
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-column">
+                <h3>Umanie Homes</h3>
+                <p>Africa's premier luxury real estate platform, connecting discerning clients with exceptional properties across the continent's most prestigious locations.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="listings.html"><i class="fas fa-chevron-right"></i> Browse Properties</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="insights.html"><i class="fas fa-chevron-right"></i> Market Insights</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Property Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Locations</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Accra, Ghana</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</a></li>
+                    <li><a href="#" ><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+233245550101">+233 24 555 0101</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@umaniehomes.com">info@umaniehomes.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>East Legon, Accra, Ghana</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2025 Umanie Homes Africa. All rights reserved.
+            </div>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Bubble -->
+    <div class="whatsapp-bubble">
+        <button class="whatsapp-btn" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+        <div class="whatsapp-tooltip">Chat with us!</div>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/team.js"></script>
+</body>
+</html>

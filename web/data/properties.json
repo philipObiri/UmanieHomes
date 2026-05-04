@@ -1,0 +1,602 @@
+[
+  {
+    "id": "UMH-2024-056",
+    "title": "The Obsidian Villa",
+    "status": "available",
+    "featured": true,
+    "price": 1250000,
+    "location": {
+      "city": "Accra",
+      "area": "East Legon",
+      "country": "Ghana"
+    },
+    "type": "Villa",
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "sqft": 4200,
+    "description": "A masterpiece of contemporary African architecture, The Obsidian Villa combines minimalist luxury with smart home technology. Floor-to-ceiling windows frame spectacular garden views, while the infinity pool merges seamlessly with the horizon.",
+    "features": ["Infinity Pool", "Smart Home System", "Solar Panels", "Private Gym", "Wine Cellar", "Home Cinema", "24/7 Security", "Staff Quarters"],
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "John Mensah",
+      "phone": "+233 24 555 0101",
+      "email": "john.mensah@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-057",
+    "title": "Ivory Heights Penthouse",
+    "status": "available",
+    "featured": true,
+    "price": 890000,
+    "location": {
+      "city": "Lagos",
+      "area": "Victoria Island",
+      "country": "Nigeria"
+    },
+    "type": "Penthouse",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqft": 2800,
+    "description": "Occupying the entire 42nd floor, this penthouse offers 360-degree views of Lagos cityscape and the Atlantic Ocean. Designed by award-winning architects, every detail exudes sophistication.",
+    "features": ["Ocean Views", "Private Elevator", "Rooftop Terrace", "Smart Home", "Concierge Service", "Indoor Pool", "Home Office", "Private Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Amina Okafor",
+      "phone": "+234 80 555 0202",
+      "email": "amina.okafor@umaniehomes.com"
+    },
+    "yearBuilt": 2024
+  },
+  {
+    "id": "UMH-2024-058",
+    "title": "Safari Modern Estate",
+    "status": "available",
+    "featured": false,
+    "price": 2100000,
+    "location": {
+      "city": "Nairobi",
+      "area": "Karen",
+      "country": "Kenya"
+    },
+    "type": "Estate",
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "sqft": 5500,
+    "description": "Set on 2 acres of pristine landscape with views of the Ngong Hills, this estate seamlessly blends luxury with nature. Perfect for families seeking space, security, and serenity.",
+    "features": ["2 Acre Plot", "Guest House", "Outdoor Kitchen", "Tennis Court", "Koi Pond", "Solar System", "Borehole", "Generator", "Staff Quarters"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687940-c52af084399b?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Peter Kamau",
+      "phone": "+254 72 555 0303",
+      "email": "peter.kamau@umaniehomes.com"
+    },
+    "yearBuilt": 2022
+  },
+  {
+    "id": "UMH-2024-059",
+    "title": "The Golden Residences",
+    "status": "available",
+    "featured": true,
+    "price": 675000,
+    "location": {
+      "city": "Accra",
+      "area": "Airport Residential",
+      "country": "Ghana"
+    },
+    "type": "Townhouse",
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqft": 3200,
+    "description": "Modern luxury townhouse in gated community. Featuring open-plan living, designer finishes, and access to world-class amenities including clubhouse and swimming pool.",
+    "features": ["Gated Community", "Swimming Pool", "Gym Access", "Clubhouse", "Backup Generator", "Solar Water Heater", "CCTV", "Children's Playground"],
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000735-1f0fc6d6ff3a?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "John Mensah",
+      "phone": "+233 24 555 0101",
+      "email": "john.mensah@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-060",
+    "title": "Emerald Bay Residence",
+    "status": "sold",
+    "featured": false,
+    "price": 1450000,
+    "location": {
+      "city": "Cape Town",
+      "area": "Camps Bay",
+      "country": "South Africa"
+    },
+    "type": "Villa",
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "sqft": 4800,
+    "description": "Spectacular beachfront villa with unobstructed ocean views. This architectural gem features multiple entertainment areas, private beach access, and premium finishes throughout.",
+    "features": ["Beach Access", "Ocean Views", "Wine Cellar", "Home Theater", "Infinity Pool", "Outdoor Shower", "BBQ Area", "Security System"],
+    "images": [
+      "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687927-8b04eb57b465?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Sarah Osei",
+      "phone": "+27 82 555 0404",
+      "email": "sarah.osei@umaniehomes.com"
+    },
+    "yearBuilt": 2021
+  },
+  {
+    "id": "UMH-2024-061",
+    "title": "Millennium Heights",
+    "status": "available",
+    "featured": false,
+    "price": 520000,
+    "location": {
+      "city": "Kigali",
+      "area": "Kacyiru",
+      "country": "Rwanda"
+    },
+    "type": "Apartment",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "sqft": 1800,
+    "description": "Contemporary apartment in Kigali's diplomatic quarter. High-end finishes, panoramic city views, and proximity to embassies and international schools.",
+    "features": ["City Views", "Concierge", "Gym", "Swimming Pool", "Backup Power", "Secure Parking", "High-Speed Internet", "24/7 Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Marie Uwase",
+      "phone": "+250 78 555 0505",
+      "email": "marie.uwase@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-062",
+    "title": "The Azure Mansion",
+    "status": "available",
+    "featured": true,
+    "price": 1850000,
+    "location": {
+      "city": "Lagos",
+      "area": "Ikoyi",
+      "country": "Nigeria"
+    },
+    "type": "Mansion",
+    "bedrooms": 7,
+    "bathrooms": 8,
+    "sqft": 6200,
+    "description": "Palatial mansion featuring Italian marble, crystal chandeliers, and gold-plated fixtures. Set in exclusive Ikoyi, this home epitomizes luxury living.",
+    "features": ["Private Pool", "Home Spa", "Library", "Game Room", "Chef's Kitchen", "Wine Cellar", "Panic Room", "Staff Quarters", "4-Car Garage"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607686488-d2c5f1eee7e2?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Amina Okafor",
+      "phone": "+234 80 555 0202",
+      "email": "amina.okafor@umaniehomes.com"
+    },
+    "yearBuilt": 2024
+  },
+  {
+    "id": "UMH-2024-063",
+    "title": "Savanna View Residence",
+    "status": "available",
+    "featured": false,
+    "price": 780000,
+    "location": {
+      "city": "Nairobi",
+      "area": "Runda",
+      "country": "Kenya"
+    },
+    "type": "Villa",
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqft": 3600,
+    "description": "Elegant villa with sweeping savanna views and modern amenities. Perfect blend of African charm and contemporary design.",
+    "features": ["Garden", "Home Office", "Solar Panels", "Water Tank", "CCTV", "Electric Gate", "Staff Quarter", "Landscaped Grounds"],
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Peter Kamau",
+      "phone": "+254 72 555 0303",
+      "email": "peter.kamau@umaniehomes.com"
+    },
+    "yearBuilt": 2022
+  },
+  {
+    "id": "UMH-2024-064",
+    "title": "Platinum Towers Penthouse",
+    "status": "available",
+    "featured": false,
+    "price": 950000,
+    "location": {
+      "city": "Accra",
+      "area": "Ridge",
+      "country": "Ghana"
+    },
+    "type": "Penthouse",
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqft": 3500,
+    "description": "Ultra-modern penthouse in the heart of Accra's business district. Features panoramic city views, private terrace, and access to premium building amenities.",
+    "features": ["City Views", "Private Terrace", "Smart Home", "Gym", "Pool", "Concierge", "Parking", "Generator"],
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687927-8b04eb57b465?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "John Mensah",
+      "phone": "+233 24 555 0101",
+      "email": "john.mensah@umaniehomes.com"
+    },
+    "yearBuilt": 2024
+  },
+  {
+    "id": "UMH-2024-065",
+    "title": "Garden District Retreat",
+    "status": "available",
+    "featured": false,
+    "price": 620000,
+    "location": {
+      "city": "Johannesburg",
+      "area": "Sandton",
+      "country": "South Africa"
+    },
+    "type": "Townhouse",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqft": 2600,
+    "description": "Stylish townhouse in secure estate with lush gardens. Modern finishes, open-plan design, and access to communal facilities.",
+    "features": ["Gated Estate", "Pool", "Gym", "Clubhouse", "Garden", "Pet Friendly", "Fiber Internet", "24/7 Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Sarah Osei",
+      "phone": "+27 82 555 0404",
+      "email": "sarah.osei@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-066",
+    "title": "Waterfront Luxury Apartment",
+    "status": "available",
+    "featured": true,
+    "price": 485000,
+    "location": {
+      "city": "Dar es Salaam",
+      "area": "Masaki",
+      "country": "Tanzania"
+    },
+    "type": "Apartment",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": 1600,
+    "description": "Stunning waterfront apartment with breathtaking ocean views. Modern design with premium finishes and resort-style amenities.",
+    "features": ["Ocean Views", "Beach Access", "Swimming Pool", "Gym", "Sauna", "Parking", "Backup Power", "24/7 Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "David Mwangi",
+      "phone": "+255 78 555 0606",
+      "email": "david.mwangi@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-067",
+    "title": "Highland Park Estate",
+    "status": "available",
+    "featured": false,
+    "price": 1320000,
+    "location": {
+      "city": "Kampala",
+      "area": "Kololo",
+      "country": "Uganda"
+    },
+    "type": "Villa",
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "sqft": 4500,
+    "description": "Exquisite villa in Kampala's most prestigious neighborhood. Combining traditional elegance with modern luxury across spacious living areas.",
+    "features": ["Large Garden", "Swimming Pool", "Home Theater", "Wine Cellar", "Solar Power", "Generator", "Staff Quarters", "3-Car Garage"],
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Grace Nakato",
+      "phone": "+256 77 555 0707",
+      "email": "grace.nakato@umaniehomes.com"
+    },
+    "yearBuilt": 2022
+  },
+  {
+    "id": "UMH-2024-068",
+    "title": "Crystal Heights Apartment",
+    "status": "available",
+    "featured": false,
+    "price": 395000,
+    "location": {
+      "city": "Accra",
+      "area": "Cantonments",
+      "country": "Ghana"
+    },
+    "type": "Apartment",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": 1400,
+    "description": "Modern apartment in diplomatic enclave. Perfect for professionals, featuring contemporary design and excellent location.",
+    "features": ["Prime Location", "Gym", "Swimming Pool", "Parking", "Generator", "CCTV", "Elevator", "Balcony"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "John Mensah",
+      "phone": "+233 24 555 0101",
+      "email": "john.mensah@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-069",
+    "title": "Royal Palm Residence",
+    "status": "available",
+    "featured": false,
+    "price": 1150000,
+    "location": {
+      "city": "Lagos",
+      "area": "Banana Island",
+      "country": "Nigeria"
+    },
+    "type": "Villa",
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "sqft": 5200,
+    "description": "Exclusive waterfront villa on Banana Island. Unparalleled luxury with private jetty, infinity pool, and spectacular lagoon views.",
+    "features": ["Waterfront", "Private Jetty", "Infinity Pool", "Home Cinema", "Gym", "Spa Room", "Staff Quarters", "Generator", "Solar"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607686488-d2c5f1eee7e2?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Amina Okafor",
+      "phone": "+234 80 555 0202",
+      "email": "amina.okafor@umaniehomes.com"
+    },
+    "yearBuilt": 2024
+  },
+  {
+    "id": "UMH-2024-070",
+    "title": "Sunset Ridge Villa",
+    "status": "available",
+    "featured": false,
+    "price": 925000,
+    "location": {
+      "city": "Nairobi",
+      "area": "Kitisuru",
+      "country": "Kenya"
+    },
+    "type": "Villa",
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqft": 3800,
+    "description": "Contemporary villa with stunning sunset views over Nairobi. Features expansive outdoor living spaces and modern interiors.",
+    "features": ["Pool", "Outdoor Kitchen", "Garden", "Home Office", "Solar Panels", "Borehole", "Staff Quarter", "Security System"],
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Peter Kamau",
+      "phone": "+254 72 555 0303",
+      "email": "peter.kamau@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-071",
+    "title": "Cosmopolitan Loft",
+    "status": "available",
+    "featured": false,
+    "price": 550000,
+    "location": {
+      "city": "Cape Town",
+      "area": "V&A Waterfront",
+      "country": "South Africa"
+    },
+    "type": "Loft",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": 1900,
+    "description": "Chic industrial loft in Cape Town's premier waterfront development. High ceilings, exposed brick, and harbour views.",
+    "features": ["Harbour Views", "Concierge", "Gym", "Parking", "Pet Friendly", "24/7 Security", "Restaurants", "Shopping Access"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Sarah Osei",
+      "phone": "+27 82 555 0404",
+      "email": "sarah.osei@umaniehomes.com"
+    },
+    "yearBuilt": 2024
+  },
+  {
+    "id": "UMH-2024-072",
+    "title": "The Heritage Mansion",
+    "status": "available",
+    "featured": true,
+    "price": 1750000,
+    "location": {
+      "city": "Accra",
+      "area": "Roman Ridge",
+      "country": "Ghana"
+    },
+    "type": "Mansion",
+    "bedrooms": 7,
+    "bathrooms": 8,
+    "sqft": 6000,
+    "description": "Grand colonial-style mansion beautifully renovated with modern amenities. Set on 1.5 acres with mature gardens and outdoor pavilion.",
+    "features": ["1.5 Acre Land", "Swimming Pool", "Tennis Court", "Guest House", "Wine Cellar", "Library", "Home Cinema", "Staff Quarters", "4-Car Garage"],
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "John Mensah",
+      "phone": "+233 24 555 0101",
+      "email": "john.mensah@umaniehomes.com"
+    },
+    "yearBuilt": 2023
+  },
+  {
+    "id": "UMH-2024-073",
+    "title": "Skyline Tower Penthouse",
+    "status": "available",
+    "featured": false,
+    "price": 1050000,
+    "location": {
+      "city": "Lagos",
+      "area": "Eko Atlantic",
+      "country": "Nigeria"
+    },
+    "type": "Penthouse",
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqft": 3900,
+    "description": "Ultra-luxe penthouse in Africa's newest city. Floor-to-ceiling glass, smart home automation, and breathtaking Atlantic views.",
+    "features": ["Ocean Views", "Smart Home", "Private Lift", "Rooftop Terrace", "Jacuzzi", "Gym Access", "Concierge", "Underground Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687927-8b04eb57b465?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6c99f5b93b?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Amina Okafor",
+      "phone": "+234 80 555 0202",
+      "email": "amina.okafor@umaniehomes.com"
+    },
+    "yearBuilt": 2024
+  },
+  {
+    "id": "UMH-2024-074",
+    "title": "Greenwood Family Home",
+    "status": "available",
+    "featured": false,
+    "price": 585000,
+    "location": {
+      "city": "Nairobi",
+      "area": "Lavington",
+      "country": "Kenya"
+    },
+    "type": "House",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "sqft": 2900,
+    "description": "Charming family home in leafy Lavington. Perfect for families with excellent schools nearby, spacious garden, and modern updates.",
+    "features": ["Garden", "Family Room", "Study", "Solar Water Heater", "Carport", "DSQ", "Security", "Playground"],
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Peter Kamau",
+      "phone": "+254 72 555 0303",
+      "email": "peter.kamau@umaniehomes.com"
+    },
+    "yearBuilt": 2021
+  },
+  {
+    "id": "UMH-2024-075",
+    "title": "Diplomat's Residence",
+    "status": "available",
+    "featured": false,
+    "price": 870000,
+    "location": {
+      "city": "Addis Ababa",
+      "area": "Bole",
+      "country": "Ethiopia"
+    },
+    "type": "Villa",
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "sqft": 4100,
+    "description": "Prestigious villa in diplomatic quarter. Ideal for expatriates and dignitaries, featuring premium finishes and secure compound.",
+    "features": ["Secure Compound", "Swimming Pool", "Home Office", "Entertainment Area", "Generator", "Solar Power", "Staff Quarters", "3-Car Garage"],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=1920&q=80"
+    ],
+    "agent": {
+      "name": "Daniel Tesfaye",
+      "phone": "+251 91 555 0808",
+      "email": "daniel.tesfaye@umaniehomes.com"
+    },
+    "yearBuilt": 2022
+  }
+]

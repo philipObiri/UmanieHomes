@@ -1,0 +1,134 @@
+[
+  {
+    "id": "test-001",
+    "name": "Dr. Kwame Asante",
+    "title": "CEO, Asante Medical Group",
+    "rating": 5,
+    "quote": "Working with John at Umanie Homes was an absolute pleasure. His knowledge of the Accra luxury market is unmatched, and he helped us find our dream villa in East Legon. The entire process was seamless.",
+    "location": "Accra, Ghana",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-056",
+    "date": "2024-12-15"
+  },
+  {
+    "id": "test-002",
+    "name": "Jennifer Adeyemi",
+    "title": "Investment Banker",
+    "rating": 5,
+    "quote": "Amina's professionalism and attention to detail made purchasing our penthouse in Victoria Island effortless. She understood exactly what we were looking for and delivered beyond expectations.",
+    "location": "Lagos, Nigeria",
+    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-057",
+    "date": "2024-11-28"
+  },
+  {
+    "id": "test-003",
+    "name": "Michael Chen",
+    "title": "Entrepreneur",
+    "rating": 5,
+    "quote": "As an expatriate buying property in Kenya for the first time, Peter's guidance was invaluable. He explained every step clearly and ensured we made an informed decision. Highly recommended!",
+    "location": "Nairobi, Kenya",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-058",
+    "date": "2024-11-10"
+  },
+  {
+    "id": "test-004",
+    "name": "Fatima Al-Rahman",
+    "title": "Diplomat",
+    "rating": 5,
+    "quote": "Sarah helped us find the perfect beachfront property in Cape Town. Her international experience and understanding of our needs as diplomats made all the difference.",
+    "location": "Cape Town, South Africa",
+    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-060",
+    "date": "2024-10-22"
+  },
+  {
+    "id": "test-005",
+    "name": "David Okonkwo",
+    "title": "Tech CEO",
+    "rating": 5,
+    "quote": "The Umanie Homes team exceeded all expectations. From property viewings to closing, everything was handled with utmost professionalism. Our mansion in Ikoyi is absolutely stunning!",
+    "location": "Lagos, Nigeria",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-062",
+    "date": "2024-10-05"
+  },
+  {
+    "id": "test-006",
+    "name": "Emma Williams",
+    "title": "International Consultant",
+    "rating": 5,
+    "quote": "Marie's expertise in the Kigali market was evident from our first meeting. She found us an apartment that perfectly suits our needs and handled all negotiations brilliantly.",
+    "location": "Kigali, Rwanda",
+    "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-061",
+    "date": "2024-09-18"
+  },
+  {
+    "id": "test-007",
+    "name": "Ahmed Mohammed",
+    "title": "Real Estate Investor",
+    "rating": 5,
+    "quote": "Fatima's investment analysis helped me build a profitable property portfolio across West Africa. Her financial acumen and market insights are second to none.",
+    "location": "Accra, Ghana",
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&q=80",
+    "propertyId": null,
+    "date": "2024-09-01"
+  },
+  {
+    "id": "test-008",
+    "name": "Sophie Dubois",
+    "title": "Fashion Designer",
+    "rating": 5,
+    "quote": "David showed us the most beautiful waterfront properties in Dar es Salaam. His passion for coastal living is infectious, and we couldn't be happier with our choice!",
+    "location": "Dar es Salaam, Tanzania",
+    "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-066",
+    "date": "2024-08-14"
+  },
+  {
+    "id": "test-009",
+    "name": "Robert Kimani",
+    "title": "Business Owner",
+    "rating": 5,
+    "quote": "Grace understood our family's needs perfectly. She found us a home in a safe neighborhood with excellent schools nearby. The kids love it here!",
+    "location": "Kampala, Uganda",
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-067",
+    "date": "2024-07-29"
+  },
+  {
+    "id": "test-010",
+    "name": "Isabella Martinez",
+    "title": "UN Official",
+    "rating": 5,
+    "quote": "Daniel's knowledge of diplomatic housing requirements was impressive. He found us a secure compound in Addis Ababa that meets all our specifications.",
+    "location": "Addis Ababa, Ethiopia",
+    "photo": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-075",
+    "date": "2024-07-12"
+  },
+  {
+    "id": "test-011",
+    "name": "Chioma Eze",
+    "title": "Lawyer",
+    "rating": 5,
+    "quote": "The level of service from Umanie Homes is exceptional. They made buying our first luxury property stress-free and exciting. Thank you!",
+    "location": "Accra, Ghana",
+    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80",
+    "propertyId": "UMH-2024-059",
+    "date": "2024-06-25"
+  },
+  {
+    "id": "test-012",
+    "name": "James Peterson",
+    "title": "Mining Executive",
+    "rating": 5,
+    "quote": "Michael helped us secure an amazing pre-construction unit in a new development. His expertise in off-plan properties saved us a significant amount.",
+    "location": "Johannesburg, South Africa",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80",
+    "propertyId": null,
+    "date": "2024-06-08"
+  }
+]

@@ -1,0 +1,494 @@
+/* ===================================
+   NAVIGATION COMPONENT
+   =================================== */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: var(--transition);
+    background: transparent;
+}
+
+nav.scrolled {
+    background: var(--nav-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 15px 7%;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Light mode - white background, dark text */
+[data-theme="light"] nav.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode - blue-black background, gold text */
+[data-theme="dark"] nav.scrolled {
+    background: rgba(10, 31, 68, 0.95);
+    border-bottom: 1px solid rgba(201, 169, 116, 0.2);
+}
+
+/* Logo */
+.logo {
+    font-weight: var(--fw-extrabold);
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    color: var(--text-primary);
+    z-index: var(--z-fixed);
+}
+
+.logo span {
+    color: var(--accent-gold);
+}
+
+/* Logo on hero - white */
+.hero nav .logo,
+nav:not(.scrolled) .logo {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo on scrolled navbar */
+nav.scrolled .logo {
+    color: var(--text-primary);
+}
+
+/* Light mode - black logo */
+[data-theme="light"] nav.scrolled .logo {
+    color: #111827;
+}
+
+/* Dark mode - gold logo */
+[data-theme="dark"] nav.scrolled .logo {
+    color: var(--accent-gold);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: var(--fw-medium);
+    font-size: 0.9rem;
+    position: relative;
+    padding: 5px 0;
+    transition: var(--transition-fast);
+}
+
+/* Better contrast for hero section - white text with shadow */
+.hero nav .nav-links a,
+nav:not(.scrolled) .nav-links a {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrolled navbar - ensure visibility in both modes */
+nav.scrolled .nav-links a {
+    color: var(--text-primary);
+}
+
+/* Light mode - black text on scrolled navbar */
+[data-theme="light"] nav.scrolled .nav-links a {
+    color: #111827;
+}
+
+/* Dark mode - gold text on scrolled navbar */
+[data-theme="dark"] nav.scrolled .nav-links a {
+    color: var(--accent-gold);
+}
+
+[data-theme="dark"] nav.scrolled .nav-links a:hover {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* Navigation Actions */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: calc(var(--z-fixed) + 1);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--accent-gold);
+    background: none;
+    border: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: var(--z-fixed);
+    position: relative;
+}
+
+.mobile-menu-toggle span {
+    width: 26px;
+    height: 2.5px;
+    background: var(--text-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+    display: block;
+}
+
+/* White hamburger on hero */
+.hero nav .mobile-menu-toggle span,
+nav:not(.scrolled) .mobile-menu-toggle span {
+    background: white;
+}
+
+/* Light mode - dark hamburger icon */
+[data-theme="light"] nav.scrolled .mobile-menu-toggle span {
+    background: #111827;
+}
+
+[data-theme="light"] .mobile-menu-toggle span {
+    background: #111827;
+}
+
+[data-theme="light"] .mobile-menu-toggle.active span {
+    background: #111827 !important;
+}
+
+/* Dark mode - gold hamburger icon */
+[data-theme="dark"] nav.scrolled .mobile-menu-toggle span {
+    background: #C9A974;
+}
+
+[data-theme="dark"] .mobile-menu-toggle span {
+    background: #C9A974;
+}
+
+[data-theme="dark"] .mobile-menu-toggle.active span {
+    background: #C9A974 !important;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Improve close button visibility - keep it in nav, don't make it fixed */
+.mobile-menu-toggle.active {
+    position: relative;
+    z-index: calc(var(--z-fixed) + 1);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+    padding: 100px 30px 30px;
+    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: calc(var(--z-fixed) - 1);
+    overflow-y: auto;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+    border-left: none;
+}
+
+/* Light mode - white background */
+[data-theme="light"] .mobile-menu {
+    background: #FFFFFF;
+    color: #111827;
+}
+
+/* Dark mode - blue-black background */
+[data-theme="dark"] .mobile-menu {
+    background: #0A1F44;
+    color: var(--accent-gold);
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu .nav-links {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Light mode - subtle border */
+[data-theme="light"] .mobile-menu .nav-links li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode - gold border */
+[data-theme="dark"] .mobile-menu .nav-links li {
+    border-bottom: 1px solid rgba(201, 169, 116, 0.2);
+}
+
+.mobile-menu.active .nav-links li:nth-child(1) { animation-delay: 0.1s; }
+.mobile-menu.active .nav-links li:nth-child(2) { animation-delay: 0.15s; }
+.mobile-menu.active .nav-links li:nth-child(3) { animation-delay: 0.2s; }
+.mobile-menu.active .nav-links li:nth-child(4) { animation-delay: 0.25s; }
+.mobile-menu.active .nav-links li:nth-child(5) { animation-delay: 0.3s; }
+.mobile-menu.active .nav-links li:nth-child(6) { animation-delay: 0.35s; }
+.mobile-menu.active .nav-links li:nth-child(7) { animation-delay: 0.4s; }
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu .nav-links li:last-child {
+    border-bottom: none;
+}
+
+.mobile-menu .nav-links a {
+    display: block !important;
+    padding: 20px 10px;
+    font-size: 1.15rem;
+    width: 100%;
+    color: var(--text-primary);
+    font-weight: var(--fw-medium);
+    transition: var(--transition-fast);
+    position: relative;
+    text-decoration: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Light mode - black text on white */
+[data-theme="light"] .mobile-menu .nav-links a {
+    color: #111827 !important;
+}
+
+/* Dark mode - gold text on dark background */
+[data-theme="dark"] .mobile-menu .nav-links a {
+    color: #C9A974 !important;
+}
+
+.mobile-menu .nav-links a:hover,
+.mobile-menu .nav-links a.active {
+    color: var(--accent-gold);
+    padding-left: 20px;
+}
+
+/* Light mode hover - gold */
+[data-theme="light"] .mobile-menu .nav-links a:hover,
+[data-theme="light"] .mobile-menu .nav-links a.active {
+    color: #C9A974 !important;
+}
+
+/* Dark mode hover - white */
+[data-theme="dark"] .mobile-menu .nav-links a:hover,
+[data-theme="dark"] .mobile-menu .nav-links a.active {
+    color: #FFFFFF !important;
+}
+
+.mobile-menu .nav-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.mobile-menu .nav-links a:hover::before,
+.mobile-menu .nav-links a.active::before {
+    width: 8px;
+}
+
+.mobile-menu .nav-links a::after {
+    display: none;
+}
+
+/* Mobile Menu Backdrop */
+.mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: calc(var(--z-fixed) - 2);
+}
+
+.mobile-menu-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Skip to Main Content Link (Accessibility) */
+.skip-to-main {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--brand-deep);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    z-index: var(--z-toast);
+    transition: top 0.3s ease;
+}
+
+.skip-to-main:focus {
+    top: 0;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 968px) {
+    nav > .nav-links {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+
+    .nav-actions .btn {
+        display: none; /* Hide Book Tour button on tablet/mobile */
+    }
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    nav.scrolled {
+        padding: 14px 5%;
+    }
+
+    /* Ensure mobile menu is visible when active */
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu .nav-links {
+        display: flex !important;
+    }
+
+    /* Keep nav-actions in proper order */
+    .nav-actions {
+        gap: 15px;
+    }
+
+    /* Theme toggle stays in place */
+    .theme-toggle {
+        order: 1;
+        position: relative;
+    }
+
+    /* Hamburger menu stays in place */
+    .mobile-menu-toggle {
+        order: 2;
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        padding: 16px 4%;
+    }
+
+    nav.scrolled {
+        padding: 12px 4%;
+    }
+
+    .theme-toggle {
+        padding: 6px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu,
+    .mobile-menu-backdrop {
+        display: none !important;
+    }
+}

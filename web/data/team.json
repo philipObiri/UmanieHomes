@@ -1,0 +1,185 @@
+[
+  {
+    "id": "team-001",
+    "name": "Chief Superintendent (Rtd.) Sadongo",
+    "title": "Chief Executive Officer, Pempen Consult | Advisory Board Member",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    "bio": "Currently serves as CEO of Pempen Consult, advising public and private sector institutions. Brings independence of thought, discretion, ethical leadership, and strategic clarity to the advisory board. Provides guidance in governance, asset safeguarding, risk management, and stakeholder confidence.",
+    "email": "info@umaniehomes.com",
+    "phone": "+233 54 969 5146",
+    "location": "Accra, Ghana",
+    "specialties": ["Security Risk Assessment", "Governance Frameworks", "Mediation & Conflict Resolution", "Operational Resilience"],
+    "languages": ["English"],
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com"
+    },
+    "yearsExperience": 25
+  },
+  {
+    "id": "team-002",
+    "name": "Dr. Jacob Plange-Rhule",
+    "title": "Advisory Board Member",
+    "credentials": "D.Statis, Adv.Dip, Grad.Cert, ACCPA, CIHRM, PMQ, MIoD, MISDS, CIAMC, ChPA, FCILG, MA, MBA, MSC, Ph.D",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    "bio": "Entrepreneur and transformational leader with 20+ years in executive leadership across telecommunications, energy, logistics, hospitality, real estate, and construction. Held senior roles including HR Director, COO, and regional managers. Academic/Level 4 Project Work Supervisor for professional certification programs; adjunct lecturer at University of Gold Coast; examiner for CIHRM Ghana.",
+    "email": "info@umaniehomes.com",
+    "phone": "+233 54 969 5146",
+    "location": "Accra, Ghana",
+    "specialties": ["Leadership Re-engineering", "Organizational Turnaround", "Restructuring", "Value Chain Modeling", "Operational Governance", "Board Administration"],
+    "languages": ["English"],
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com"
+    },
+    "yearsExperience": 20
+  },
+  {
+    "id": "team-003",
+    "name": "Ronald Andrews Abbey",
+    "title": "Advisory Board Member | Director of Finance, University Gold Coast",
+    "credentials": "MSc (Acc & Fin), AFA, MIPA",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "bio": "Distinguished finance executive providing strategic leadership over financial governance and long-term growth. Associate Member of Institute of Financial Accountants (UK) and Institute of Public Accountants (Australia); advancing toward full qualification with Institute of Chartered Accountants, Ghana.",
+    "email": "info@umaniehomes.com",
+    "phone": "+233 54 969 5146",
+    "location": "Accra, Ghana",
+    "specialties": ["Debt Financing", "Financial Policy Formulation", "System Optimization", "Budgeting Frameworks", "Tax Planning", "Enterprise Risk Management", "Cost Control"],
+    "languages": ["English"],
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com"
+    },
+    "yearsExperience": 15
+  },
+  {
+    "id": "team-004",
+    "name": "Dr. John Kwesi Quarm Junior",
+    "title": "Advisory Board Member | Managing Director, Quarm Associates Ltd",
+    "credentials": "PhD, P.E-GhIE",
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+    "bio": "Civil and Structural Engineer with nearly two decades of experience delivering complex infrastructure and building projects across Ghana. Led design, supervision, and delivery of residential, institutional, commercial, and faith-based developments. Supervised landmark projects at University of Cape Coast for over a decade.",
+    "email": "info@umaniehomes.com",
+    "phone": "+233 54 969 5146",
+    "location": "Greater Accra, Ghana",
+    "specialties": ["Reinforced & Prestressed Concrete Design", "Steel & Timber Structures", "Foundation & Geotechnical Engineering", "Structural Analysis", "Project Management", "Sustainable Construction Materials"],
+    "languages": ["English"],
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://instagram.com"
+    },
+    "yearsExperience": 18
+  },
+  {
+    "id": "team-005",
+    "name": "Amara Okonkwo",
+    "title": "Lead Property Agent - Lagos",
+    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    "bio": "Award-winning luxury real estate specialist with 12+ years experience in Nigeria's premium property market. Amara has successfully closed over $50M in high-end residential transactions and maintains an extensive network of international investors and local developers.",
+    "email": "amara.okonkwo@umaniehomes.com",
+    "phone": "+234 803 555 0234",
+    "location": "Lagos, Nigeria",
+    "specialties": ["Luxury Residential Sales", "Investment Properties", "Client Relations", "Market Analysis", "Negotiation"],
+    "languages": ["English", "Igbo", "French"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/amara-okonkwo",
+      "twitter": "https://twitter.com/amaraokonkwo",
+      "instagram": "https://instagram.com/amara.luxury.homes"
+    },
+    "yearsExperience": 12
+  },
+  {
+    "id": "team-006",
+    "name": "Sarah Kipchoge",
+    "title": "Senior Agent - Nairobi",
+    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+    "bio": "Passionate about connecting clients with their dream properties across East Africa. Sarah specializes in waterfront estates and golf course communities, with deep knowledge of Nairobi's most exclusive neighborhoods and emerging luxury developments.",
+    "email": "sarah.kipchoge@umaniehomes.com",
+    "phone": "+254 722 555 0456",
+    "location": "Nairobi, Kenya",
+    "specialties": ["Waterfront Properties", "Golf Communities", "New Developments", "International Clients", "Property Valuation"],
+    "languages": ["English", "Swahili", "German"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/sarah-kipchoge",
+      "twitter": "https://twitter.com/sarahkipchoge",
+      "instagram": "https://instagram.com/sarahk.realestate"
+    },
+    "yearsExperience": 9
+  },
+  {
+    "id": "team-007",
+    "name": "Kwame Asante",
+    "title": "Marketing Director",
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+    "bio": "Creative marketing strategist with expertise in luxury brand positioning and digital campaigns. Kwame leads Umanie Homes' marketing initiatives across Africa, leveraging cutting-edge technology and data analytics to reach high-net-worth individuals globally.",
+    "email": "kwame.asante@umaniehomes.com",
+    "phone": "+233 24 555 0789",
+    "location": "Accra, Ghana",
+    "specialties": ["Brand Strategy", "Digital Marketing", "Content Creation", "Analytics", "Social Media", "Photography"],
+    "languages": ["English", "French", "Twi"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/kwame-asante",
+      "twitter": "https://twitter.com/kwameasante",
+      "instagram": "https://instagram.com/kwame.markets"
+    },
+    "yearsExperience": 8
+  },
+  {
+    "id": "team-008",
+    "name": "Fatima Diop",
+    "title": "Investment Consultant",
+    "photo": "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?auto=format&fit=crop&w=400&q=80",
+    "bio": "Financial strategist specializing in real estate investment portfolios for diaspora and international clients. Fatima provides comprehensive analysis on ROI, market trends, and long-term growth opportunities across African luxury markets.",
+    "email": "fatima.diop@umaniehomes.com",
+    "phone": "+221 77 555 0321",
+    "location": "Dakar, Senegal / Accra, Ghana",
+    "specialties": ["Investment Analysis", "Portfolio Management", "Diaspora Services", "Financial Planning", "Market Research"],
+    "languages": ["French", "English", "Wolof"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/fatima-diop",
+      "twitter": "https://twitter.com/fatimadiop",
+      "instagram": "https://instagram.com/fatima.invest"
+    },
+    "yearsExperience": 11
+  },
+  {
+    "id": "team-009",
+    "name": "Michael van der Merwe",
+    "title": "Senior Agent - Cape Town",
+    "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
+    "bio": "Luxury property specialist with deep expertise in Cape Town's Atlantic Seaboard and Winelands estates. Michael brings 15 years of experience in high-value transactions and has established relationships with international buyers seeking South African luxury properties.",
+    "email": "michael.vandermerwe@umaniehomes.com",
+    "phone": "+27 82 555 0654",
+    "location": "Cape Town, South Africa",
+    "specialties": ["Coastal Properties", "Wine Estates", "International Sales", "Luxury Villas", "Property Development"],
+    "languages": ["English", "Afrikaans", "Dutch"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/michael-vandermerwe",
+      "twitter": "https://twitter.com/michaelvdm",
+      "instagram": "https://instagram.com/michael.cpt.luxury"
+    },
+    "yearsExperience": 15
+  },
+  {
+    "id": "team-010",
+    "name": "Zainab Mustapha",
+    "title": "Client Relations Manager",
+    "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
+    "bio": "Dedicated to ensuring exceptional client experiences throughout the property buying journey. Zainab coordinates seamless transactions, manages client communications, and ensures every detail exceeds expectations. Her multilingual capabilities and cultural awareness make international clients feel at home.",
+    "email": "zainab.mustapha@umaniehomes.com",
+    "phone": "+233 26 555 0987",
+    "location": "Accra, Ghana",
+    "specialties": ["Client Experience", "Transaction Coordination", "Relationship Management", "Customer Service", "Process Optimization"],
+    "languages": ["English", "Arabic", "French", "Hausa"],
+    "social": {
+      "linkedin": "https://linkedin.com/in/zainab-mustapha",
+      "twitter": "https://twitter.com/zainabmustapha",
+      "instagram": "https://instagram.com/zainab.clientcare"
+    },
+    "yearsExperience": 7
+  }
+]

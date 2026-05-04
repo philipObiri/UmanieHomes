@@ -1,0 +1,290 @@
+[
+  {
+    "id": "insight-001",
+    "title": "Accra Luxury Real Estate Market Report 2025",
+    "slug": "accra-luxury-market-report-2025",
+    "category": "Market Analysis",
+    "featured": true,
+    "author": {
+      "name": "Sarah Osei",
+      "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2025-01-15",
+    "readTime": 8,
+    "excerpt": "Comprehensive analysis of Accra's luxury property market trends, pricing dynamics, and investment opportunities for 2025. See how East Legon and Airport Residential areas are leading growth.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-002",
+    "title": "The Ultimate Guide to Buying Property in Lagos",
+    "slug": "buying-property-lagos-guide",
+    "category": "Buying Guide",
+    "featured": true,
+    "author": {
+      "name": "Amina Okafor",
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2025-01-10",
+    "readTime": 12,
+    "excerpt": "Everything you need to know about purchasing luxury property in Lagos. From legal requirements to neighborhood insights, this comprehensive guide covers it all.",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-003",
+    "title": "Why Smart Homes Are the Future of African Luxury Real Estate",
+    "slug": "smart-homes-african-luxury",
+    "category": "Technology",
+    "featured": false,
+    "author": {
+      "name": "Peter Kamau",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2025-01-05",
+    "readTime": 6,
+    "excerpt": "Explore how smart home technology is transforming luxury properties across Africa. From energy efficiency to enhanced security, discover the benefits driving adoption.",
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-004",
+    "title": "Top 10 Luxury Neighborhoods in Nairobi 2025",
+    "slug": "top-luxury-neighborhoods-nairobi",
+    "category": "Location Guide",
+    "featured": false,
+    "author": {
+      "name": "Peter Kamau",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-12-28",
+    "readTime": 10,
+    "excerpt": "From Karen to Runda, discover Nairobi's most prestigious neighborhoods. We analyze property values, amenities, and lifestyle factors that make these areas stand out.",
+    "image": "https://images.unsplash.com/photo-1587585373968-1e734f45a049?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-005",
+    "title": "Sustainable Luxury: Green Building Trends in African Real Estate",
+    "slug": "sustainable-luxury-green-building",
+    "category": "Sustainability",
+    "featured": true,
+    "author": {
+      "name": "Marie Uwase",
+      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-12-20",
+    "readTime": 7,
+    "excerpt": "Solar panels, rainwater harvesting, and eco-friendly materials are becoming standard in luxury homes. Learn about the sustainability revolution in African real estate.",
+    "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-006",
+    "title": "Understanding Property Investment Returns Across Africa",
+    "slug": "property-investment-returns-africa",
+    "category": "Investment",
+    "featured": false,
+    "author": {
+      "name": "Fatima Hassan",
+      "photo": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-12-15",
+    "readTime": 15,
+    "excerpt": "A deep dive into ROI expectations, rental yields, and capital appreciation across major African markets. Essential reading for property investors.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-007",
+    "title": "The Rise of Gated Communities in West Africa",
+    "slug": "gated-communities-west-africa",
+    "category": "Market Trends",
+    "featured": false,
+    "author": {
+      "name": "John Mensah",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-12-08",
+    "readTime": 9,
+    "excerpt": "Examining the growing demand for secure, community-oriented living. Why gated estates are reshaping luxury residential development in Ghana and Nigeria.",
+    "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-008",
+    "title": "Waterfront Living: Cape Town's Most Exclusive Properties",
+    "slug": "cape-town-waterfront-living",
+    "category": "Location Guide",
+    "featured": false,
+    "author": {
+      "name": "Sarah Osei",
+      "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-12-01",
+    "readTime": 11,
+    "excerpt": "From Camps Bay to Clifton, explore Cape Town's stunning coastal properties. Premium locations, lifestyle amenities, and investment potential analyzed.",
+    "image": "https://images.unsplash.com/photo-1580742984963-0d18cd8279e0?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-009",
+    "title": "Legal Considerations When Buying Property in Africa",
+    "slug": "legal-considerations-buying-property",
+    "category": "Legal",
+    "featured": false,
+    "author": {
+      "name": "Daniel Tesfaye",
+      "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-11-24",
+    "readTime": 13,
+    "excerpt": "Navigate the legal landscape of African property ownership. Title deeds, due diligence, and regulatory requirements explained by country.",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-010",
+    "title": "The Expatriate's Guide to Finding Your Perfect African Home",
+    "slug": "expatriate-guide-african-home",
+    "category": "Buying Guide",
+    "featured": false,
+    "author": {
+      "name": "Grace Nakato",
+      "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-11-18",
+    "readTime": 10,
+    "excerpt": "Essential advice for international buyers and expatriates. From choosing the right neighborhood to understanding local customs, we've got you covered.",
+    "image": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-011",
+    "title": "Eko Atlantic: Africa's Ambitious Smart City Development",
+    "slug": "eko-atlantic-smart-city",
+    "category": "Development",
+    "featured": false,
+    "author": {
+      "name": "Amina Okafor",
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-11-10",
+    "readTime": 14,
+    "excerpt": "An in-depth look at Eko Atlantic, Nigeria's new financial and residential hub. Infrastructure, investment opportunities, and future prospects explored.",
+    "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-012",
+    "title": "How to Maximize Rental Income on Luxury Properties",
+    "slug": "maximize-rental-income-luxury",
+    "category": "Investment",
+    "featured": false,
+    "author": {
+      "name": "Fatima Hassan",
+      "photo": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-11-03",
+    "readTime": 8,
+    "excerpt": "Strategic tips for landlords looking to optimize returns. Pricing strategies, tenant selection, and property management best practices.",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-013",
+    "title": "The Impact of Infrastructure Development on Property Values",
+    "slug": "infrastructure-impact-property-values",
+    "category": "Market Analysis",
+    "featured": false,
+    "author": {
+      "name": "Michael Odhiambo",
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-10-28",
+    "readTime": 11,
+    "excerpt": "How new highways, airports, and rail systems are transforming property markets. Case studies from Nairobi, Accra, and Lagos.",
+    "image": "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-014",
+    "title": "Luxury Home Design Trends Shaping African Architecture",
+    "slug": "luxury-design-trends-african-architecture",
+    "category": "Design",
+    "featured": false,
+    "author": {
+      "name": "David Mwangi",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-10-20",
+    "readTime": 7,
+    "excerpt": "Contemporary African architecture is blending traditional elements with modern luxury. Discover the design trends defining high-end properties in 2025.",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-015",
+    "title": "First-Time Luxury Home Buyer's Checklist",
+    "slug": "first-time-luxury-buyer-checklist",
+    "category": "Buying Guide",
+    "featured": false,
+    "author": {
+      "name": "John Mensah",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-10-12",
+    "readTime": 9,
+    "excerpt": "Your comprehensive checklist for purchasing your first luxury property. From financing to final walkthrough, every step covered in detail.",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-016",
+    "title": "Kigali's Real Estate Boom: Opportunities in Rwanda",
+    "slug": "kigali-real-estate-boom",
+    "category": "Market Trends",
+    "featured": false,
+    "author": {
+      "name": "Marie Uwase",
+      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-10-05",
+    "readTime": 10,
+    "excerpt": "Rwanda's capital is experiencing unprecedented growth. Analyze the factors driving demand and discover investment opportunities in this emerging market.",
+    "image": "https://images.unsplash.com/photo-1581974206340-21e70f1bf048?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-017",
+    "title": "Security Features Every Luxury Home Should Have",
+    "slug": "luxury-home-security-features",
+    "category": "Security",
+    "featured": false,
+    "author": {
+      "name": "Peter Kamau",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-09-28",
+    "readTime": 6,
+    "excerpt": "From biometric access to integrated CCTV systems, explore the essential security features that protect your investment and provide peace of mind.",
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  },
+  {
+    "id": "insight-018",
+    "title": "The Future of Mixed-Use Developments in Africa",
+    "slug": "future-mixed-use-developments",
+    "category": "Development",
+    "featured": false,
+    "author": {
+      "name": "Michael Odhiambo",
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
+    },
+    "date": "2024-09-20",
+    "readTime": 12,
+    "excerpt": "Live, work, and play in one location. Examine how mixed-use developments are reshaping urban living across African cities.",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "content": "Full article content would go here..."
+  }
+]
