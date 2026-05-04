@@ -7,7 +7,8 @@ import { tenantApi, authApi } from '../../api';
 const POLL_INTERVAL = 3000;
 
 function ExportSection() {
-  const [taskId, setTaskId] = useState<string | null>(null);
+  // const [taskId, setTaskId] = useState<string | null>(null);
+  const [, setTaskId] = useState<string | null>(null);
   const [exportState, setExportState] = useState<'idle' | 'pending' | 'ready' | 'failed'>('idle');
   const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);

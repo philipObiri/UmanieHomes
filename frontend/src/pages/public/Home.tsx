@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import {
-  Star, ChevronLeft, ChevronRight, ChevronDown,
-  Building2, CircleDollarSign, TrendingUp, Key, ScanSearch, Users,
+ Star, ChevronLeft, ChevronRight,Building2, CircleDollarSign, TrendingUp, Key, ScanSearch, Users,
 } from 'lucide-react';
 import { propertiesApi, cmsApi } from '../../api';
 import { PropertyCard } from '../../components/shared/PropertyCard';
@@ -36,15 +35,15 @@ export function Home() {
     queryFn: () => cmsApi.testimonials(),
   });
 
-  const { data: faqsData } = useQuery({
-    queryKey: ['faqs-home'],
-    queryFn: () => cmsApi.faqs({ page_size: 5 }),
-  });
+  // const { data: faqsData } = useQuery({
+  //   queryKey: ['faqs-home'],
+  //   queryFn: () => cmsApi.faqs({ page_size: 5 }),
+  // });
 
   const featured = featuredData?.results || [];
   const testimonials = testimonialsData?.results || [];
-  const faqs = faqsData?.results || [];
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  // const faqs = faqsData?.results || [];
+  // const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
