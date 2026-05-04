@@ -93,3 +93,4 @@ media/uploads/*
 .git-rewrite
 Admissions_Template.xlsx
 progress.md
+.prod_end
