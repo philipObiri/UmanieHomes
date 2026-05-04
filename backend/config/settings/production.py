@@ -27,6 +27,9 @@ CSRF_COOKIE_SECURE = True
 
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
+# Prevent collectstatic from failing on missing source maps in third-party JS
+WHITENOISE_MANIFEST_STRICT = False
+
 if config("USE_S3", default=False, cast=bool):
     # DigitalOcean Spaces (S3-compatible) for all uploaded media
     AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
