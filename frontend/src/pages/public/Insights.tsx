@@ -103,10 +103,12 @@ export function Insights() {
                     onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = 'none'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'var(--shadow-sm)'; }}>
                     {/* Image */}
                     <div style={{ aspectRatio: '16/10', background: 'var(--color-surface-2)', overflow: 'hidden', position: 'relative' }}>
-                      {post.featured_image ? (
-                        <img src={imgUrl(post.featured_image)} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      {(post as any).featured_image_url ? (
+                        <img src={imgUrl((post as any).featured_image_url)} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       ) : (
-                        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem' }}>📰</div>
+                        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary, #0a1f44) 100%)', opacity: 0.7 }}>
+                          <span style={{ fontSize: '2.5rem', opacity: 0.5 }}>📰</span>
+                        </div>
                       )}
                       {post.category && (
                         <span className="badge" style={{ position: 'absolute', top: '0.75rem', left: '0.75rem', background: 'var(--color-primary)', color: '#fff', fontSize: '0.65rem' }}>
@@ -114,20 +116,16 @@ export function Insights() {
                         </span>
                       )}
                     </div>
-                    <div style={{ padding: '1.25rem' }}>
+                    <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
                       <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.5rem', lineHeight: 1.4 }}>
-                        <Link to={`/insights/${post.slug}`} style={{ color: 'inherit' }}
-                          onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--color-primary)'; }}
-                          onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--color-text)'; }}>
-                          {post.title}
-                        </Link>
+                        {post.title}
                       </h3>
                       {post.excerpt && (
                         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', lineHeight: 1.6, marginBottom: '1rem' }}>
                           {post.excerpt.length > 100 ? post.excerpt.slice(0, 100) + '...' : post.excerpt}
                         </p>
                       )}
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                           <Clock size={12} /> {post.read_time_minutes} min
                         </span>
@@ -136,6 +134,9 @@ export function Insights() {
                         </span>
                         <span>{formatDate(post.published_at)}</span>
                       </div>
+                      <Link to={`/insights/${post.slug}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', color: 'var(--color-primary)', fontWeight: 700, fontSize: '0.85rem', marginTop: 'auto' }}>
+                        Read Article <ArrowRight size={14} />
+                      </Link>
                     </div>
                   </div>
                 ))}
