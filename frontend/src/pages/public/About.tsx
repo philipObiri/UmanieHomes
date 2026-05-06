@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { Trophy, ShieldCheck, Heart, Globe, Zap, Handshake, Eye, Target, TrendingUp, Briefcase } from 'lucide-react';
+import { Trophy, ShieldCheck, Heart, Globe, Zap, Eye, Target, TrendingUp, Briefcase } from 'lucide-react';
 import { cmsApi } from '../../api';
 import { useTenantStore } from '../../stores/tenantStore';
 import { PageHeader } from '../../components/shared/PageHeader';
