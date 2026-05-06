@@ -25,6 +25,12 @@ SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
+CSRF_TRUSTED_ORIGINS = config(
+    "CSRF_TRUSTED_ORIGINS",
+    default="https://umaniehomesafrica.com,https://www.umaniehomesafrica.com",
+    cast=Csv(),
+)
+
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
 # Prevent collectstatic from failing on missing source maps in third-party JS

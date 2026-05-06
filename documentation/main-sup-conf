@@ -1,0 +1,18 @@
+  GNU nano 7.2        /etc/supervisor/conf.d/umanie-django.conf
+[program:umanie]
+command=/var/www/umaniehomes/backend/venv/bin/gunicorn config.asgi:application
+    --worker-class uvicorn.workers.UvicornWorker
+    --workers 4
+    --bind 127.0.0.1:8000
+    --timeout 120
+    --access-logfile /var/log/umanie/django-access.log
+    --error-logfile /var/log/umanie/django-error.log
+directory=/var/www/umaniehomes/backend
+user=deploy
+environment=DJANGO_SETTINGS_MODULE="config.settings.production"
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+stderr_logfile=/var/log/umanie/django-supervisor.log
+stdout_logfile=/var/log/umanie/django-supervisor.log

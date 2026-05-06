@@ -1,2 +1,9 @@
 umanie_user
 $Um2026Home$
+
+
+
+VITE_API_URL=https://umaniehomesafrica.com/api/v1 
+VITE_MEDIA_URL=https://umaniehomesafrica.com 
+VITE_WS_URL=ws://localhost:8000 
+VITE_VAPID_PUBLIC_KEY=BGQEzSvzJxmX_gElDnC5Mazbp6N3R-IT9xByVGyw6hmnumNO15vT-Uf8Nsw0t4tmLvmFTvPoNuH--6QWUkD11-E

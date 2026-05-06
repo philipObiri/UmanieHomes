@@ -1,0 +1,16 @@
+ GNU nano 7.2        /etc/supervisor/conf.d/umaine-celery.conf
+[program:umanie-celery]
+command=/var/www/umaniehomes/backend/venv/bin/celery
+    -A config worker
+    --loglevel=info
+    --concurrency=4
+    --logfile=/var/log/umanie/celery-worker.log
+directory=/var/www/umaniehomes/backend
+user=deploy
+environment=DJANGO_SETTINGS_MODULE="config.settings.production"
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+stderr_logfile=/var/log/umanie/celery-supervisor.log
+stdout_logfile=/var/log/umanie/celery-supervisor.log
