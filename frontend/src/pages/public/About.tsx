@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { Trophy, ShieldCheck, Heart, Globe, Landmark, Zap, Handshake, Eye, Target } from 'lucide-react';
+import { Trophy, ShieldCheck, Heart, Globe, Zap, Handshake, Eye, Target, TrendingUp, Briefcase } from 'lucide-react';
 import { cmsApi } from '../../api';
 import { useTenantStore } from '../../stores/tenantStore';
 import { PageHeader } from '../../components/shared/PageHeader';
@@ -75,15 +75,15 @@ export function About() {
               {
                 Icon: Eye,
                 label: 'Our Vision',
-                text: 'To build developments across Africa that outlive trends, outgrow limitations, and outlast a lifetime — creating spaces that reflect Africa\'s strength, beauty, and ambition while securing generational wealth for families and investors.',
+                text: "To be Africa's leading and most trusted platform for real estate development and investment.",
               },
               {
                 Icon: Target,
                 label: 'Our Mission',
-                text: 'To transform real estate across Africa through unwavering integrity, excellence, and partnership — delivering premium properties that protect families\' life savings, honour investors\' trust, and fulfil dreams that span generations.',
+                text: 'To develop strategically positioned real estate assets across Africa with integrity, innovation, and operational excellence, providing accessible investment opportunities, creating sustainable impact, expanding home ownership, and building long-term wealth for investors and communities.',
               },
             ].map((item, i) => (
-              <div key={item.label} className={`info-card reveal-scale reveal-delay-${i + 1}`} style={{ textAlign: 'left' }}>
+              <div key={item.label} className={`info-card reveal-scale reveal-delay-${i + 1}`}>
                 <div className="icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.25rem' }}>
                   <item.Icon size={28} color="white" />
                 </div>
@@ -95,26 +95,99 @@ export function About() {
         </div>
       </section>
 
-      {/* Values */}
+      {/* The 5 Es — Core Values */}
       <section className="section">
         <div className="section-header reveal">
-          <h2 className="section-title">What We Stand For</h2>
+          <h2 className="section-title">The 5 Es</h2>
           <div className="divider-gold" />
-          <p className="section-subtitle">The principles that guide everything we do</p>
+          <p className="section-subtitle">Our core values — the principles that guide everything we do</p>
         </div>
         <div className="container">
-          <div className="grid grid-3">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
             {[
-              { Icon: Landmark, title: 'Integrity', desc: 'We operate with complete transparency. Every transaction, every communication is honest and ethical.' },
-              { Icon: Zap, title: 'Excellence', desc: 'We set and uphold the highest standards in property quality, service delivery, and client experience.' },
-              { Icon: Handshake, title: 'Partnership', desc: "We don't just sell properties — we build lasting relationships and guide clients through their journey." },
+              {
+                Icon: Trophy,
+                title: 'Excellence',
+                tagline: 'Build to global standards',
+                points: [
+                  'Build to global standards',
+                  'Take pride in your work',
+                  'Be professional, respectful and responsive',
+                  'Always improve',
+                  'Deliver beyond expectations',
+                ],
+              },
+              {
+                Icon: ShieldCheck,
+                title: 'Ethics',
+                tagline: 'Operate with integrity, always',
+                points: [
+                  'Operate with integrity, always',
+                  'Be honest and transparent',
+                  'Honor commitment',
+                  'Protect client trust',
+                  'Do the right thing, even when no one is watching',
+                ],
+              },
+              {
+                Icon: Zap,
+                title: 'Execution',
+                tagline: 'Turn plans into delivered results',
+                points: [
+                  'Turn plans into delivered results',
+                  'Get it done — now, and very well',
+                  'Finish what you start',
+                  'Deliver on time',
+                ],
+              },
+              {
+                Icon: Briefcase,
+                title: 'Enterprise',
+                tagline: 'Own the task',
+                points: [
+                  'Own the task',
+                  'Anticipate and solve problems early',
+                  'Act immediately without waiting',
+                  'Go the extra mile',
+                  'Think long term',
+                ],
+              },
+              {
+                Icon: TrendingUp,
+                title: 'Evolution',
+                tagline: 'Improve systems and processes',
+                points: [
+                  'Improve systems and processes',
+                  'Be innovative',
+                  'Adapt quickly',
+                  'Strive to be better every day',
+                ],
+              },
             ].map((v, i) => (
-              <div key={v.title} className={`info-card reveal-scale reveal-delay-${i + 1}`}>
-                <div className="icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <v.Icon size={28} color="white" />
+              <div key={v.title} className={`reveal-scale reveal-delay-${(i % 3) + 1}`} style={{
+                background: 'var(--card-bg)',
+                border: '1px solid var(--border-color)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '2rem 1.5rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1rem',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <div className="icon" style={{ width: 44, height: 44, minWidth: 44, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <v.Icon size={22} color="white" />
+                  </div>
+                  <div>
+                    <p style={{ fontSize: '0.65rem', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0 }}>Core Value</p>
+                    <h3 style={{ fontSize: '1.1rem', fontWeight: 800, margin: 0, color: 'var(--color-text)' }}>{v.title}</h3>
+                  </div>
                 </div>
-                <h3>{v.title}</h3>
-                <p>{v.desc}</p>
+                <div style={{ width: 32, height: 2, background: 'var(--accent-gold)', borderRadius: 2 }} />
+                <ul style={{ margin: 0, padding: '0 0 0 1rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                  {v.points.map((pt) => (
+                    <li key={pt} style={{ fontSize: '0.875rem', color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>{pt}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
