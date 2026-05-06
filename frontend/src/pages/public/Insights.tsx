@@ -52,12 +52,14 @@ export function Insights() {
             <>
               {/* Featured post */}
               {posts[0] && (
-                <div className="card" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', overflow: 'hidden', marginBottom: '3rem' }}>
-                  <div style={{ aspectRatio: '16/10', background: 'var(--color-surface-2)', overflow: 'hidden' }}>
-                    {posts[0].featured_image ? (
-                      <img src={imgUrl(posts[0].featured_image)} alt={posts[0].title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div className="card insights-featured" style={{ overflow: 'hidden', marginBottom: '3rem' }}>
+                  <div style={{ background: 'var(--color-surface-2)', overflow: 'hidden', minHeight: 220 }}>
+                    {(posts[0] as any).featured_image_url ? (
+                      <img src={imgUrl((posts[0] as any).featured_image_url)} alt={posts[0].title} style={{ width: '100%', height: '100%', objectFit: 'cover', maxHeight: 360 }} />
                     ) : (
-                      <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '4rem' }}>📰</div>
+                      <div style={{ width: '100%', minHeight: 220, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary, #0a1f44) 100%)' }}>
+                        <span style={{ fontSize: '4rem', opacity: 0.4 }}>📰</span>
+                      </div>
                     )}
                   </div>
                   <div style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -94,7 +96,7 @@ export function Insights() {
               )}
 
               {/* Grid */}
-              <div className="grid-3">
+              <div className="grid grid-3">
                 {posts.slice(1).map((post) => (
                   <div key={post.id} className="card" style={{ overflow: 'hidden', transition: 'transform 0.3s, box-shadow 0.3s' }}
                     onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)'; (e.currentTarget as HTMLDivElement).style.boxShadow = 'var(--shadow-lg)'; }}

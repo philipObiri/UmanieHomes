@@ -1044,6 +1044,10 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   .container { padding: 0 5%; }
 }
 
+/* Insights featured post — side-by-side on desktop */
+.insights-featured { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.insights-featured > div:first-child { aspect-ratio: 16/10; }
+
 /* Mobile: ≤ 768px */
 @media (max-width: 768px) {
   /* Grids → single column */
@@ -1086,6 +1090,11 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   /* Founder section — stack photo above quote on mobile */
   .founder-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
   .founder-grid > div:first-child { order: -1; }
+
+  /* Insights featured post — stack on mobile */
+  .insights-featured { display: flex !important; flex-direction: column !important; }
+  .insights-featured > div:first-child { min-height: 200px !important; max-height: 240px !important; }
+  .insights-featured > div:last-child { padding: 1.5rem !important; }
 
   /* Footer */
   .site-footer { padding: 40px 0 0; margin-top: 60px; }
