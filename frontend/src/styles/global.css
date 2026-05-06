@@ -12,6 +12,8 @@ html {
   font-size: var(--font-size-base);
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -22,8 +24,14 @@ body {
   font-size: var(--fs-body);
   transition: background-color 0.5s ease, color 0.3s ease;
   overflow-x: hidden;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1095,6 +1103,10 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
   .insights-featured { display: flex !important; flex-direction: column !important; }
   .insights-featured > div:first-child { min-height: 200px !important; max-height: 240px !important; }
   .insights-featured > div:last-child { padding: 1.5rem !important; }
+
+  /* Listing detail header — reduce top padding on mobile */
+  .listing-detail-header { padding: 5rem 0 2rem !important; min-height: 280px !important; }
+  .listing-detail-breadcrumb { display: none !important; }
 
   /* Footer */
   .site-footer { padding: 40px 0 0; margin-top: 60px; }

@@ -65,7 +65,7 @@ export function ListingDetail() {
     <div style={{ background: 'var(--color-bg)', minHeight: '100vh', paddingBottom: '4rem' }}>
 
       {/* ===== PROPERTY HEADER ===== */}
-      <div style={{
+      <div className="listing-detail-header" style={{
         position: 'relative',
         background: primaryImgUrl
           ? `linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.82) 100%), url(${primaryImgUrl}) center/cover no-repeat`
@@ -77,14 +77,14 @@ export function ListingDetail() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
       }}>
-        {/* Breadcrumb */}
-        <div className="container" style={{ marginBottom: '1.5rem' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)' }}>
-            <Link to="/" style={{ color: 'rgba(255,255,255,0.7)' }}>Home</Link>
+        {/* Breadcrumb — hidden on mobile, shown on desktop */}
+        <div className="container listing-detail-breadcrumb" style={{ marginBottom: '1.5rem' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.72rem', color: 'rgba(255,255,255,0.7)', maxWidth: '100%', overflow: 'hidden' }}>
+            <Link to="/" style={{ color: 'rgba(255,255,255,0.7)', whiteSpace: 'nowrap' }}>Home</Link>
             <span>/</span>
-            <Link to="/listings" style={{ color: 'rgba(255,255,255,0.7)' }}>Listings</Link>
+            <Link to="/listings" style={{ color: 'rgba(255,255,255,0.7)', whiteSpace: 'nowrap' }}>Listings</Link>
             <span>/</span>
-            <span style={{ color: '#fff' }}>{property.title}</span>
+            <span style={{ color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{property.title}</span>
           </div>
         </div>
 
@@ -300,11 +300,6 @@ export function ListingDetail() {
         </div>
       </div>
 
-      <style>{`
-        @media (max-width: 900px) {
-          .listing-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
     </div>
   );
 }
