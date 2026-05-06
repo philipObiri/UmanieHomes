@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Bed, Bath, Maximize, MapPin, Heart } from 'lucide-react';
+import { Bed, Bath, Maximize, MapPin, Heart, Star } from 'lucide-react';
 import { useState } from 'react';
 import type { Property } from '../../types';
 
@@ -73,7 +73,19 @@ export function PropertyCard({ property }: PropertyCardProps) {
         {/* Badges — outside overflow:hidden so they never get clipped */}
         <div style={{ position: 'absolute', top: '0.75rem', left: '0.75rem', display: 'flex', gap: '0.3rem', flexWrap: 'nowrap', maxWidth: 'calc(100% - 3.5rem)', zIndex: 2, overflow: 'hidden' }}>
           {property.is_featured && (
-            <span className="badge badge-accent" style={{ fontSize: '0.65rem', whiteSpace: 'nowrap' }}>Featured</span>
+            <span style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.25rem',
+              background: 'var(--accent-gold, #C49E56)',
+              color: '#fff',
+              padding: '0.25rem 0.6rem',
+              borderRadius: '999px',
+              fontSize: '0.6rem', fontWeight: 800,
+              textTransform: 'uppercase', letterSpacing: '0.06em',
+              whiteSpace: 'nowrap',
+              boxShadow: '0 2px 8px rgba(196,158,86,0.45)',
+            }}>
+              <Star size={9} fill="#fff" color="#fff" /> Featured
+            </span>
           )}
           <span className="badge" style={{
             fontSize: '0.65rem', whiteSpace: 'nowrap',

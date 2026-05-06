@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { useTenantStore } from './stores/tenantStore';
 import { useAuthStore } from './stores/authStore';
+import { PageLoader } from './components/ui/PageLoader';
 
 export function AppBootstrap({ children }: { children: React.ReactNode }) {
-  const { fetchTenant, fetchTheme } = useTenantStore();
+  const { fetchTenant, fetchTheme, isLoading } = useTenantStore();
   const { fetchMe } = useAuthStore();
 
   useEffect(() => {
@@ -12,6 +13,8 @@ export function AppBootstrap({ children }: { children: React.ReactNode }) {
     fetchTheme();
     fetchMe();
   }, []);
+
+  if (isLoading) return <PageLoader />;
 
   return <>{children}</>;
 }
