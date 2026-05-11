@@ -325,16 +325,20 @@ class Command(BaseCommand):
             },
         ]
 
+        # Wipe existing team members for this tenant so renamed/updated entries
+        # don't accumulate duplicates across seed runs.
+        TeamMember.objects.filter(tenant=tenant).delete()
+
         for member_data in team_data:
             is_featured = member_data.pop("is_featured", True)
-            member, _ = TeamMember.objects.get_or_create(
+            member = TeamMember.objects.create(
                 tenant=tenant,
-                name=member_data["name"],
-                defaults={**member_data, "is_featured": is_featured},
+                is_featured=is_featured,
+                **member_data,
             )
 
-            # Attach local photo if not already set and file exists
-            if not skip_images and not member.photo_id:
+            # Attach local photo
+            if not skip_images:
                 self._attach_team_photo(member, tenant, admin_user)
 
             self.stdout.write(f"  [OK] {member_data['name']}")
