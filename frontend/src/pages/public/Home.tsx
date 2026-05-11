@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import {
- Star, ChevronLeft, ChevronRight,Building2, CircleDollarSign, TrendingUp, Key, ScanSearch, Users,
+  Star, ChevronLeft, ChevronRight, Building2, CircleDollarSign, TrendingUp, Key, ScanSearch, Users,
+  MapPin, Layers, CreditCard, Globe, BarChart2, HardHat, ShieldCheck,
 } from 'lucide-react';
 import { propertiesApi, cmsApi } from '../../api';
 import { PropertyCard } from '../../components/shared/PropertyCard';
@@ -260,6 +261,49 @@ export function Home() {
                 Learn Our Story →
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== WHY INVEST ===== */}
+      <section className="section" style={{ background: 'var(--color-primary, #0a1f44)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <h2 className="section-title reveal" style={{ color: '#fff', fontSize: '2rem' }}>
+              Why Invest With Umanie Homes Africa
+            </h2>
+            <div className="divider-gold" style={{ margin: '1rem auto' }} />
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
+            {[
+              { Icon: MapPin,       text: 'High-growth locations',        desc: 'Properties in Africa\'s fastest-growing and most promising urban corridors.' },
+              { Icon: Layers,       text: 'Strategic developments',       desc: 'Every project is thoughtfully positioned for long-term value appreciation.' },
+              { Icon: CreditCard,   text: 'Flexible payment plans',       desc: 'Accessible instalment options designed for homeowners, investors, and diaspora.' },
+              { Icon: Globe,        text: 'Diaspora-friendly process',    desc: 'Seamless remote acquisition — we guide you from inquiry to title deed.' },
+              { Icon: BarChart2,    text: 'Strong appreciation potential',desc: 'Locations selected for consistent capital growth and rental yield performance.' },
+              { Icon: HardHat,      text: 'Quality construction',         desc: 'Built to global standards with premium materials and certified engineering oversight.' },
+              { Icon: ShieldCheck,  text: 'Transparent transactions',     desc: 'Clear documentation, honest pricing, and no hidden costs — integrity at every step.' },
+            ].map(({ Icon, text, desc }, i) => (
+              <div key={text} className={`reveal-scale reveal-delay-${(i % 3) + 1}`} style={{
+                display: 'flex', alignItems: 'flex-start', gap: '1rem',
+                background: 'rgba(255,255,255,0.06)',
+                border: '1px solid rgba(196,158,86,0.25)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '1.5rem',
+              }}>
+                <div style={{
+                  width: 44, height: 44, minWidth: 44, borderRadius: '50%',
+                  background: 'var(--accent-gold, #C49E56)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                }}>
+                  <Icon size={20} color="#fff" />
+                </div>
+                <div>
+                  <p style={{ fontWeight: 700, color: '#fff', marginBottom: '0.35rem', fontSize: '1rem' }}>{text}</p>
+                  <p style={{ fontSize: '0.82rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.6, margin: 0 }}>{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
