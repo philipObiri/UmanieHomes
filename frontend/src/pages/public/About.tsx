@@ -152,7 +152,9 @@ export function About() {
                 tagline: 'Turn plans into delivered results',
                 points: [
                   'Turn plans into delivered results',
-                  'Get it done — now, and very well',
+                  'Get it done',
+                  'Get it done now',
+                  'Get it done very well',
                   'Finish what you start',
                   'Deliver on time',
                 ],
