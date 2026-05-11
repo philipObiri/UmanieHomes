@@ -50,7 +50,7 @@ export function Contact() {
   const contactItems = [
     { icon: Phone, label: 'Phone', value: tenant?.contact_phone || '+233 54 969 5146', href: `tel:${tenant?.contact_phone || '+233549695146'}` },
     { icon: Mail, label: 'Email', value: tenant?.contact_email || 'info@umaniehomesafrica.com', href: `mailto:${tenant?.contact_email}` },
-    { icon: MapPin, label: 'Address', value: tenant?.address ? `${tenant.address}${tenant.city ? `, ${tenant.city}` : ''}` : 'Main Street Lashibi off Chicken Man Pizzaman, Tema, Ghana', href: null },
+    { icon: MapPin, label: 'Office', value: tenant?.address ? `${tenant.address}${tenant.city ? `, ${tenant.city}` : ''}` : 'Hans Plaza, 2nd Floor, along Sakumono-Lashibi Road', href: null },
     { icon: Clock, label: 'Hours', value: tenant?.business_hours || 'Mon–Fri: 7AM–7PM', href: null },
   ];
 

@@ -212,59 +212,96 @@ class Command(BaseCommand):
         self.stdout.write(self.style.MIGRATE_HEADING("Creating Team Members"))
         team_data = [
             {
-                "name": "Chief Superintendent (Rtd.) Sadongo",
-                "title": "Advisory Board Member, CEO of Pempen Consult",
+                "name": "CSP Elvis Bawa Sadongo (Rtd.)",
+                "title": "Advisory Board Member | CEO, Pempen Consult",
                 "bio": (
-                    "Chief Superintendent (Rtd.) Sadongo brings decades of distinguished service "
-                    "in law enforcement and security to our advisory board. As CEO of Pempen Consult, "
-                    "he provides strategic oversight in security risk assessment, governance, "
-                    "conflict management, and mediation. His expertise ensures our developments "
-                    "meet the highest standards of security and community safety."
+                    "Chief Superintendent of Police (Rtd.) Elvis Bawa Sadongo is a distinguished security, "
+                    "governance, and risk-management practitioner with over three decades of senior leadership "
+                    "experience spanning public safety administration, internal security strategy, regulatory "
+                    "engagement, and institutional oversight. During his distinguished service, he held senior "
+                    "command and advisory positions within complex and high-risk operating environments, "
+                    "including United Nations peacekeeping missions, where he worked alongside multinational "
+                    "stakeholders to strengthen institutional stability, public safety, and rule-of-law "
+                    "frameworks. He brings to the Board extensive expertise in enterprise risk management, "
+                    "asset and site security, regulatory compliance, crisis and incident response, and "
+                    "organizational resilience. Mr. Sadongo currently serves as CEO of Pempen Consult, "
+                    "advising public and private sector institutions on security risk assessment, governance "
+                    "frameworks, mediation, conflict resolution, and operational resilience."
                 ),
                 "location": "Accra, Ghana",
-                "specialties": ["Security Risk Assessment", "Governance", "Conflict Management", "Mediation"],
+                "specialties": ["Security Risk Management", "Governance", "Crisis Response", "Mediation", "UN Peacekeeping"],
                 "years_experience": 30,
                 "order": 1,
             },
             {
-                "name": "Dr. Jacob Plange-Rhule",
-                "title": "Advisory Board Member",
+                "name": "Dr. Jacob Plange-Rhule D.Statis, MBA, MSc, PhD",
+                "title": "Advisory Board Member | Executive Director, Datbreau Research Ltd",
                 "bio": (
-                    "Dr. Jacob Plange-Rhule brings over 20 years of executive leadership experience "
-                    "spanning 11 industries including business consulting, HR, operations, and healthcare. "
-                    "His multi-disciplinary expertise guides our strategic growth and organizational "
-                    "development across African markets."
+                    "Dr. Jacob Plange-Rhule is an entrepreneur and transformational leader with over 20 years "
+                    "of executive leadership experience spanning 11 industries including Business Consulting, "
+                    "Telecommunications, Energy, Freight & Logistics, Hospitality, Transport, Agriculture, "
+                    "Real Estate, Construction, and Mass Communication. He holds an MSc in International "
+                    "Business from the University of Ghana Business School, an MA in E-Business & Marketing "
+                    "Strategy from GCTU, an MBA from the Australian Institute of Business, and is a PhD "
+                    "scholar in Business Administration. He has served in senior roles across organizations "
+                    "including Surfline Communications, Expresso Telecom, Kasapa Telecom, Adom Group (as "
+                    "Group General Manager and Deputy Managing Director of Adom City Estate), and is "
+                    "currently Executive Director of Datbreau Research Limited. A Board Member of Surfline "
+                    "Communications Limited and Advisory Board Chairman of Capacity and Recruitment Towers "
+                    "Limited, Dr. Plange-Rhule is a Professional Member of CIHRMP, Fellow of the Chartered "
+                    "Institute of Leadership & Governance (USA-Ghana chapter), and an adjunct lecturer at "
+                    "the University of Gold Coast. He is an expert in Leadership Re-engineering, "
+                    "Organizational Turnaround, and Value Chain Modelling."
                 ),
                 "location": "Accra, Ghana",
-                "specialties": ["Business Consulting", "HR Management", "Operations", "Strategic Planning"],
+                "specialties": ["Executive Leadership", "HR Management", "Business Strategy", "Organizational Turnaround", "Research"],
                 "years_experience": 20,
                 "order": 2,
             },
             {
-                "name": "Ronald Andrews Abbey",
-                "title": "Advisory Board Member, Director of Finance -- University of Gold Coast",
+                "name": "Ronald Andrews Abbey MSc, AFA, MIPA",
+                "title": "Advisory Board Member | Director of Finance, University of Gold Coast",
                 "bio": (
-                    "Ronald Andrews Abbey holds an MSc in Accounting and Finance and serves as "
-                    "Director of Finance at the University of Gold Coast. His expertise in debt "
-                    "financing, financial policy, risk management, and capital structure is "
-                    "invaluable in ensuring our financial operations meet international standards."
+                    "Ronald Andrews Abbey is a distinguished finance executive and the Director of Finance "
+                    "at the University of Gold Coast (formerly Accra Business School), where he provides "
+                    "strategic leadership over the institution's financial governance, sustainability, and "
+                    "long-term growth agenda. He holds an MSc in Accounting and Finance and is an Associate "
+                    "Member of the Institute of Financial Accountants (UK) and the Institute of Public "
+                    "Accountants (Australia). With a proven track record in debt financing, financial policy "
+                    "formulation, and system optimization, Ronald has been instrumental in supporting "
+                    "institutional expansion, capital projects, and infrastructure development. His leadership "
+                    "has strengthened financial resilience through robust budgeting frameworks, tax planning "
+                    "strategies, enterprise risk management, and disciplined cost control mechanisms. "
+                    "Renowned for his analytical rigor and strategic foresight, he consistently enhances "
+                    "financial controls, compliance standards, and operational efficiency."
                 ),
-                "location": "Cape Coast, Ghana",
-                "specialties": ["Debt Financing", "Financial Policy", "Risk Management", "Capital Structure"],
+                "location": "Accra, Ghana",
+                "specialties": ["Debt Financing", "Financial Governance", "Risk Management", "Tax Planning", "Capital Projects"],
                 "years_experience": 15,
                 "order": 3,
             },
             {
-                "name": "Dr. John Kwesi Quarm Junior",
-                "title": "Advisory Board Member, Managing Director -- Quarm Associates Ltd",
+                "name": "Dr. John Kwesi Quarm Junior PhD, P.E-GhIE",
+                "title": "Advisory Board Member | Managing Director, Quarm Associates Ltd",
                 "bio": (
-                    "Dr. John Kwesi Quarm Junior is a PhD-holding Civil and Structural Engineer "
-                    "with nearly two decades of experience in construction and infrastructure. "
-                    "As Managing Director of Quarm Associates Ltd, he ensures our properties are "
-                    "built to the highest engineering standards with structural integrity and safety."
+                    "John Kwesi Quarm Junior is a highly accomplished Civil and Structural Engineer, "
+                    "academic scholar, and real estate development leader with nearly two decades of "
+                    "professional experience delivering complex infrastructure and building projects across "
+                    "Ghana. As a PhD holder in Structural Engineering and a Professional Engineer (GhIE), "
+                    "he brings exceptional technical depth, strategic foresight, and executional excellence "
+                    "to UMANIE Homes Africa. Throughout his career, Dr. Quarm has led the design, "
+                    "supervision, and delivery of high-value residential, institutional, commercial, and "
+                    "faith-based developments, including multi-storey apartments, shopping malls, "
+                    "auditoriums, road infrastructure, and critical public facilities. He served for over "
+                    "a decade at the University of Cape Coast, overseeing landmark projects funded by "
+                    "national and international bodies. As Managing Director of Quarm Associates Ltd, he "
+                    "has executed large-scale developments across Greater Accra, Central, Western, and "
+                    "Eastern Regions of Ghana. Dr. Quarm is also a published researcher with peer-reviewed "
+                    "articles on sustainable construction materials, concrete performance optimization, and "
+                    "structural integrity of locally manufactured reinforcement systems."
                 ),
                 "location": "Accra, Ghana",
-                "specialties": ["Structural Engineering", "Civil Engineering", "Construction Management", "Infrastructure"],
+                "specialties": ["Structural Engineering", "Civil Engineering", "Project Management", "Sustainable Construction", "Research"],
                 "years_experience": 18,
                 "order": 4,
             },

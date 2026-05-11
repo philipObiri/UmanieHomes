@@ -116,16 +116,14 @@ export function Footer() {
                 </a>
               </div>
             )}
-            {(tenant?.address || 'Main Street Lashibi off Chicken Man Pizzaman, Tema, Ghana') && (
-              <div className="footer-contact-item">
+            <div className="footer-contact-item">
                 <MapPin size={18} style={{ color: 'var(--accent-gold)', flexShrink: 0, marginTop: 2 }} />
                 <span style={{ color: 'rgba(255,255,255,0.8)' }}>
                   {tenant?.address
                     ? `${tenant.address}${tenant.city ? `, ${tenant.city}` : ''}`
-                    : 'Main Street Lashibi, Tema, Ghana'}
+                    : 'Hans Plaza, 2nd Floor, along Sakumono-Lashibi Road'}
                 </span>
               </div>
-            )}
             <div className="footer-contact-item">
               <Clock size={18} style={{ color: 'var(--accent-gold)', flexShrink: 0, marginTop: 2 }} />
               <span style={{ color: 'rgba(255,255,255,0.8)' }}>

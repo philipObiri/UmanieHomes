@@ -15,7 +15,7 @@ export function About() {
     <div ref={pageRef} id="main-content">
       <PageHeader
         title={`About ${tenant?.name || 'Umanie Homes Africa'}`}
-        subtitle={tenant?.tagline || 'Your trusted partner in premium real estate across Africa'}
+        subtitle="Homes Inspired by African Dreams"
         bgImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
         breadcrumbs={[{ label: 'Home', to: '/' }, { label: 'About' }]}
       />
@@ -28,14 +28,31 @@ export function About() {
               <h2 className="section-title">Building Africa's Real Estate Legacy</h2>
               <div className="divider-gold" style={{ margin: '0 0 var(--space-lg)' }} />
               <p>
-                At {tenant?.name || 'Umanie Homes Africa'}, we believe a home is more than walls and a roof —
-                it is dignity, identity, and legacy. We are entrusted with families' life savings,
-                investors' trust, and dreams that span generations.
+                At Umanie Homes Africa, we believe real estate is more than buildings and land — it is
+                legacy, opportunity, security, and a foundation for generational wealth.
               </p>
               <p>
-                That responsibility demands more than ambition. It demands integrity. We combine deep
-                market knowledge with an unwavering commitment to excellence, serving clients from
-                first-time buyers to seasoned investors across Africa's most prestigious locations.
+                We specialize in the development of modern, timeless, and functional homes, delivering
+                premium bungalows, duplexes, apartments, and high-value real estate investment
+                opportunities across Africa's fastest-growing and most promising locations.
+              </p>
+              <p>
+                Every project we undertake is thoughtfully designed to combine quality craftsmanship,
+                contemporary living, smart functionality, and strong long-term investment value.
+              </p>
+              <p>
+                Driven by integrity, innovation, and excellence, we are committed to helping homeowners,
+                investors, and diaspora clients secure properties that offer comfort, lifestyle appeal,
+                and exceptional appreciation potential.
+              </p>
+              <p>
+                Our approach combines strategic development, deep market insight, and an uncompromising
+                commitment to quality to create communities and investment opportunities built for lasting
+                impact and sustainable growth.
+              </p>
+              <p>
+                At Umanie Homes Africa, we are not just building homes — we are creating opportunities,
+                shaping communities, and contributing to the future of African real estate.
               </p>
               <Link to="/contact" className="btn btn-primary" style={{ marginTop: 'var(--space-md)' }}>
                 Get in Touch
