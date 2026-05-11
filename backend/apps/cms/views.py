@@ -70,6 +70,17 @@ class MediaListView(TenantQuerysetMixin, generics.ListCreateAPIView):
     def get_permissions(self):
         return [AllowAny()] if self.request.method == "GET" else [IsTenantManager()]
 
+    def get_queryset(self):
+        qs = super().get_queryset()
+        # Exclude team profile photos from public gallery listings.
+        # Team photos are saved by the seed command with a 'team_' name prefix.
+        user = self.request.user
+        is_admin = user.is_authenticated and hasattr(user, 'get_role_for_tenant') and \
+            user.get_role_for_tenant(getattr(self.request, 'tenant', None)) in ('admin', 'manager')
+        if not is_admin:
+            qs = qs.exclude(name__startswith='team_')
+        return qs
+
     def perform_create(self, serializer):
         serializer.save(tenant=self.request.tenant, uploaded_by=self.request.user)
 
