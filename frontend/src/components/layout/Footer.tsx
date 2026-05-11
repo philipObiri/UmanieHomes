@@ -32,8 +32,7 @@ export function Footer() {
           <img src={uhaLogo} alt={tenant?.name || 'Umanie Homes Africa'}
             style={{ height: 52, width: 'auto', objectFit: 'contain', marginBottom: '0.75rem' }} />
           <p>
-            Africa's premier luxury real estate platform, connecting discerning clients
-            with exceptional properties across the continent's most prestigious locations.
+            Explore premium homes and high-value investment opportunities across Africa's fastest-growing locations.
           </p>
           <div className="footer-social">
             {/* Facebook */}

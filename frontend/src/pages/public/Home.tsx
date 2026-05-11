@@ -76,7 +76,7 @@ export function Home() {
         />
         <div className="hero-content">
           <h1>Luxury African Real Estate</h1>
-          <p>Discover premium homes and strategic real estate investment opportunities in Africa's fastest-growing and most promising locations.</p>
+          <p>Explore premium homes and high-value investment opportunities across Africa's fastest-growing locations.</p>
 
           <form className="hero-search" onSubmit={handleSearch}>
             <div className="hero-search-field">
