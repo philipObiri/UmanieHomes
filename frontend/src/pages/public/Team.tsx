@@ -192,7 +192,7 @@ export function Team() {
 
       <section className="section">
         <div className="section-header reveal">
-          <h2 className="section-title">Our Leadership</h2>
+          <h2 className="section-title">Advisory Board Members</h2>
           <div className="divider-gold" />
           <p className="section-subtitle">
             A dedicated group of real estate professionals committed to excellence and your success.

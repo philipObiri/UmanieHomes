@@ -37,8 +37,8 @@ PROPERTY_IMAGES_LOCAL = {
 # Path is relative to BASE_DIR (project root, one level above backend/)
 TEAM_PHOTOS = {
     "Emmanuel U. Solomon":  "frontend/public/team/Emmanual_Solomon.jpeg",
-    "Sadongo":              "frontend/public/team/Mr. Sadongo.png",
-    "Jacob Plange-Rhule":  "frontend/public/team/Jacob Plange-Rhule.png",
+    "Sadongo":              "frontend/public/team/Sadongo_New_.jpg",
+    "Jacob Plange-Rhule":  "frontend/public/team/Jacob_Plange_Rhule_.jpg",
     "Ronald Andrews Abbey": "frontend/public/team/Ronald Andrews Abbey.jpeg",
     "John Kwesi Quarm":    "frontend/public/team/John Kwesi Quarm Junior.jpeg",
 }
