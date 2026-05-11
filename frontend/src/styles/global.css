@@ -973,9 +973,11 @@ input, textarea, select { font-family: inherit; font-size: 1rem; }
 /* Property detail: main content + sticky sidebar */
 .detail-grid {
   display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 2.5rem;
+  grid-template-columns: 1fr minmax(0, 360px);
+  gap: 2rem;
   align-items: start;
+  width: 100%;
+  min-width: 0;
 }
 
 /* Team 3-col grid */

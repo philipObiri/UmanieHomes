@@ -133,7 +133,7 @@ export function ListingDetail() {
 
         <div className="detail-grid">
           {/* Left: Images + details */}
-          <div>
+          <div style={{ minWidth: 0 }}>
             {/* Main image */}
             <div style={{ position: 'relative', borderRadius: 'var(--radius-xl)', overflow: 'hidden', aspectRatio: '16/9', background: 'var(--color-surface-2)', marginBottom: '0.75rem' }}>
               {currentImg ? (
@@ -221,7 +221,7 @@ export function ListingDetail() {
           </div>
 
           {/* Right: Inquiry form + agent */}
-          <div style={{ position: 'sticky', top: 'calc(var(--nav-height) + 1.5rem)' }}>
+          <div style={{ position: 'sticky', top: 'calc(var(--nav-height) + 1.5rem)', minWidth: 0 }}>
             {/* Inquiry form */}
             <div className="card" style={{ padding: '1.75rem', marginBottom: '1.25rem' }}>
               <h3 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '1.25rem', color: 'var(--color-text)' }}>
