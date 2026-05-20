@@ -36,7 +36,6 @@ PROPERTY_IMAGES_LOCAL = {
 # Team photos shipped in frontend/public/team/ — keyed by member name fragment
 # Path is relative to BASE_DIR (project root, one level above backend/)
 TEAM_PHOTOS = {
-    "Emmanuel U. Solomon":  "frontend/public/team/Emmanual_Solomon.jpeg",
     "Sadongo":              "frontend/public/team/Sadongo_New_.jpg",
     "Jacob Plange-Rhule":  "frontend/public/team/Jacob_Plange_Rhule_.jpg",
     "Ronald Andrews Abbey": "frontend/public/team/Ronald Andrews Abbey.jpeg",
@@ -304,24 +303,6 @@ class Command(BaseCommand):
                 "specialties": ["Structural Engineering", "Civil Engineering", "Project Management", "Sustainable Construction", "Research"],
                 "years_experience": 18,
                 "order": 4,
-            },
-            {
-                "name": "Emmanuel U. Solomon",
-                "title": "Chief Executive Officer & Founder",
-                "bio": (
-                    "Emmanuel U. Solomon is the founder and CEO of Umanie Homes Africa. He leads with "
-                    "the conviction that growth must never outpace integrity — building premium real "
-                    "estate across Africa that creates generational wealth for families and investors. "
-                    "Entrusted with life savings and dreams that span generations, Emmanuel commits to "
-                    "building spaces that outlive trends, outgrow limitations, and outlast a lifetime."
-                ),
-                "location": "Tema, Ghana",
-                "email": "info@umaniehomesafrica.com",
-                "phone": "+233 54 969 5146",
-                "specialties": ["Real Estate Development", "Business Strategy", "Leadership", "African Markets"],
-                "years_experience": 10,
-                "order": 0,
-                "is_featured": True,
             },
         ]
 

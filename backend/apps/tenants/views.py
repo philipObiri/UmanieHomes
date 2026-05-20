@@ -16,11 +16,33 @@ class CurrentTenantView(APIView):
     """Returns the tenant resolved from the current domain. Public endpoint."""
     permission_classes = [AllowAny]
 
+    EDITABLE_FIELDS = [
+        "name", "tagline", "description",
+        "email", "phone", "address", "city", "country",
+        "business_hours_start", "business_hours_end", "business_days",
+    ]
+
     def get(self, request):
         tenant = getattr(request, "tenant", None)
         if not tenant:
             return Response({"detail": "No tenant found for this domain."}, status=404)
         serializer = TenantPublicSerializer(tenant)
+        return Response(serializer.data)
+
+    def patch(self, request):
+        """Allows tenant admins to update their own company info."""
+        if not request.user or not request.user.is_authenticated:
+            return Response({"detail": "Authentication required."}, status=401)
+        tenant = getattr(request, "tenant", None)
+        if not tenant:
+            return Response({"detail": "No tenant context."}, status=400)
+        if not hasattr(request.user, "get_role_for_tenant") or \
+                request.user.get_role_for_tenant(tenant) not in ("admin", "manager"):
+            return Response({"detail": "Permission denied."}, status=403)
+        data = {k: v for k, v in request.data.items() if k in self.EDITABLE_FIELDS}
+        serializer = TenantPublicSerializer(tenant, data=data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
         return Response(serializer.data)
 
 

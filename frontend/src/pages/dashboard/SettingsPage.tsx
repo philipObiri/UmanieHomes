@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Download, Loader2, CheckCircle2, AlertCircle, Save, Bell, Globe, Lock } from 'lucide-react';
+import { Download, Loader2, CheckCircle2, AlertCircle, Save, Bell, Globe, Lock, Building2 } from 'lucide-react';
 import { toast } from '../../components/ui/Toast';
 import { tenantApi, authApi } from '../../api';
 
@@ -128,6 +128,80 @@ function ExportSection() {
           <li>Tenant settings and theme configuration</li>
         </ul>
       </div>
+    </div>
+  );
+}
+
+function CompanyInfoSection({ tenant }: { tenant: Record<string, unknown> }) {
+  const qc = useQueryClient();
+  const [form, setForm] = useState({
+    name:    (tenant.name    as string) || '',
+    tagline: (tenant.tagline as string) || '',
+    email:   (tenant.email   as string) || '',
+    phone:   (tenant.phone   as string) || '',
+    address: (tenant.address as string) || '',
+    city:    (tenant.city    as string) || '',
+    country: (tenant.country as string) || '',
+    business_hours_start: (tenant.business_hours_start as string) || '',
+    business_hours_end:   (tenant.business_hours_end   as string) || '',
+  });
+
+  const saveMut = useMutation({
+    mutationFn: () => tenantApi.updateCurrent(form as Record<string, unknown>),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['tenant'] });
+      toast.success('Company info saved.');
+    },
+    onError: () => toast.error('Failed to save company info.'),
+  });
+
+  const inputStyle = {
+    width: '100%', padding: '0.5rem 0.75rem',
+    border: '1px solid var(--color-border)', borderRadius: 'var(--radius-md)',
+    background: 'var(--color-bg)', color: 'var(--color-text)', fontSize: '0.875rem',
+    boxSizing: 'border-box' as const,
+  };
+
+  return (
+    <div className="card" style={{ padding: '1.5rem' }}>
+      <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1.25rem', color: 'var(--color-text)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <Building2 size={16} /> Company Information
+      </h3>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+        {[
+          { key: 'name',    label: 'Company Name',  span: 2 },
+          { key: 'tagline', label: 'Tagline',        span: 2 },
+          { key: 'email',   label: 'Contact Email'           },
+          { key: 'phone',   label: 'Contact Phone'           },
+          { key: 'address', label: 'Office Address', span: 2 },
+          { key: 'city',    label: 'City'                    },
+          { key: 'country', label: 'Country'                 },
+          { key: 'business_hours_start', label: 'Office Opens (e.g. 07:00)' },
+          { key: 'business_hours_end',   label: 'Office Closes (e.g. 19:00)' },
+        ].map(({ key, label, span }) => (
+          <div key={key} style={{ gridColumn: span === 2 ? 'span 2' : 'span 1' }}>
+            <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 600, color: 'var(--color-text-secondary)', marginBottom: '0.35rem' }}>
+              {label}
+            </label>
+            <input
+              style={inputStyle}
+              value={form[key as keyof typeof form]}
+              onChange={(e) => setForm((f) => ({ ...f, [key]: e.target.value }))}
+            />
+          </div>
+        ))}
+      </div>
+
+      <button
+        className="btn btn-primary"
+        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+        onClick={() => saveMut.mutate()}
+        disabled={saveMut.isPending}
+      >
+        {saveMut.isPending ? <Loader2 size={14} className="spin" /> : <Save size={14} />}
+        Save Company Info
+      </button>
     </div>
   );
 }
@@ -337,12 +411,16 @@ function SecuritySection() {
 }
 
 export function SettingsPage() {
-  const { data: settings, isLoading } = useQuery({
+  const { data: settings, isLoading: settingsLoading } = useQuery({
     queryKey: ['tenant-settings'],
     queryFn: () => tenantApi.settings(),
   });
+  const { data: tenant, isLoading: tenantLoading } = useQuery({
+    queryKey: ['tenant'],
+    queryFn: () => tenantApi.current(),
+  });
 
-  if (isLoading) {
+  if (settingsLoading || tenantLoading) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', padding: '4rem' }}>
         <Loader2 size={28} className="spin" style={{ color: 'var(--color-primary)' }} />
@@ -351,17 +429,19 @@ export function SettingsPage() {
   }
 
   const s = settings || {};
+  const t = (tenant as Record<string, unknown>) || {};
 
   return (
     <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 0 3rem' }}>
       <div style={{ marginBottom: '2rem' }}>
         <h1 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-text)', marginBottom: '0.25rem' }}>Settings</h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.875rem' }}>
-          Manage notifications, social links, security, and data export.
+          Manage company info, notifications, social links, security, and data export.
         </p>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <CompanyInfoSection tenant={t} />
         <NotificationsSection settings={s} />
         <SocialSection settings={s} />
         <SecuritySection />

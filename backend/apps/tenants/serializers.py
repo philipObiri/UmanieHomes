@@ -28,6 +28,7 @@ class TenantPublicSerializer(serializers.ModelSerializer):
             "business_hours_start", "business_hours_end", "business_days",
             "timezone", "domains", "settings",
         ]
+        read_only_fields = ["id", "slug", "domains", "settings", "timezone"]
 
 
 class TenantAdminSerializer(serializers.ModelSerializer):

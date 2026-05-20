@@ -28,6 +28,8 @@ export const authApi = {
 // Tenant
 export const tenantApi = {
   current: () => api.get<Tenant>('/tenants/current/').then((r) => r.data),
+  updateCurrent: (data: Record<string, unknown>) =>
+    api.patch<Tenant>('/tenants/current/', data).then((r) => r.data),
   theme: () => api.get<ThemeConfig>('/themes/').then((r) => r.data),
   settings: () => api.get('/tenants/settings/').then((r) => r.data),
   updateSettings: (data: Record<string, unknown>) =>
