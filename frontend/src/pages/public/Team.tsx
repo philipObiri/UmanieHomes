@@ -17,8 +17,8 @@ function imgUrl(path?: string) {
 
 // Static photos shipped in frontend/public/team/ — keyed by name fragment
 const STATIC_TEAM_PHOTOS: Record<string, string> = {
-  'Sadongo':              '/team/Mr. Sadongo.png',
-  'Jacob Plange-Rhule':  '/team/Jacob Plange-Rhule.png',
+  'Sadongo':              '/team/Sadongo_New_.jpg',
+  'Jacob Plange-Rhule':  '/team/Jacob_Plange_Rhule_.jpg',
   'Ronald Andrews Abbey': '/team/Ronald Andrews Abbey.jpeg',
   'John Kwesi Quarm':    '/team/John Kwesi Quarm Junior.jpeg',
 };

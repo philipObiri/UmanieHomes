@@ -256,8 +256,8 @@ export function TeamPage() {
                     <td style={{ padding: '0.875rem 1rem' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                         <div style={{ width: 40, height: 40, borderRadius: '50%', overflow: 'hidden', background: 'var(--color-surface-2)', flexShrink: 0 }}>
-                          {m.photo ? (
-                            <img src={imgUrl(m.photo)} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                          {m.photo_url ? (
+                            <img src={m.photo_url} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                           ) : (
                             <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, color: 'var(--color-primary)' }}>
                               {m.name?.charAt(0) ?? '?'}
