@@ -6,11 +6,6 @@ import { Modal } from '../../components/ui/Modal';
 import { ConfirmDialog } from '../../components/ui/ConfirmDialog';
 import { toast } from '../../components/ui/Toast';
 
-const API_BASE = import.meta.env.VITE_MEDIA_URL || 'http://localhost:8000';
-function imgUrl(path?: string) {
-  if (!path) return '';
-  return path.startsWith('http') ? path : `${API_BASE}${path}`;
-}
 
 interface MemberForm {
   name: string;

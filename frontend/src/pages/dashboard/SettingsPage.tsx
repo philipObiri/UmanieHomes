@@ -429,7 +429,7 @@ export function SettingsPage() {
   }
 
   const s = settings || {};
-  const t = (tenant as Record<string, unknown>) || {};
+  const t = (tenant as unknown as Record<string, unknown>) || {};
 
   return (
     <div style={{ maxWidth: 860, margin: '0 auto', padding: '0 0 3rem' }}>
