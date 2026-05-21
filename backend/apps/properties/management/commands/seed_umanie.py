@@ -113,7 +113,7 @@ class Command(BaseCommand):
                 "is_active": True,
                 "email": "info@umaniehomesafrica.com",
                 "phone": "+233 54 969 5146",
-                "address": "Main Street, Lashibi off Chicken Man Pizzaman",
+                "address": "Hans Plaza, 2nd Floor, along Sakumono-Lashibi Road",
                 "city": "Tema",
                 "country": "Ghana",
                 "timezone": "Africa/Accra",
@@ -580,7 +580,7 @@ class Command(BaseCommand):
                 "title": "3 Bedrooms Bungalow with Boys Quarters",
                 "description": (
                     "A stunning 3-bedroom bungalow with self-contained boys quarters, located in the "
-                    "prestigious Community 14 Lashibi area, directly opposite the Lashibi ECG District Office "
+                    "prestigious Com.14 Lashibi area, directly opposite the Lashibi ECG District Office "
                     "off the Spintex Road. This property combines modern architectural design with energy-efficient "
                     "construction to deliver a world-class living experience.\n\n"
                     "The property features spacious bedrooms with built-in wardrobes, a modern kitchen with "
@@ -600,7 +600,7 @@ class Command(BaseCommand):
                 "energy_class": "A",
                 "energy_performance_index": 92.9,
                 "boys_quarters": True,
-                "address": "Community 14 Lashibi, opposite Lashibi ECG District Office, off the Spintex Road",
+                "address": "Com.14 Lashibi, opposite Lashibi ECG District Office, off the Spintex Road",
                 "city": "Tema",
                 "area": "Lashibi",
                 "region": "Greater Accra",
@@ -629,7 +629,7 @@ class Command(BaseCommand):
                 "title": "4 Bedrooms Duplex with Boys Quarters",
                 "description": (
                     "An exceptional 4-bedroom duplex with self-contained boys quarters, located in "
-                    "Community 14 Lashibi, one of Tema's most sought-after residential communities. "
+                    "Com.14 Lashibi, one of Tema's most sought-after residential communities. "
                     "This architecturally impressive duplex offers two floors of premium living space.\n\n"
                     "Features include 4 spacious bedrooms across two floors, 5 modern bathrooms, "
                     "an open-plan living and dining area, a chef's kitchen with premium appliances, "
@@ -650,7 +650,7 @@ class Command(BaseCommand):
                 "energy_class": "A",
                 "energy_performance_index": 92.9,
                 "boys_quarters": True,
-                "address": "Community 14 Lashibi, opposite Lashibi ECG District Office, off the Spintex Road",
+                "address": "Com.14 Lashibi, opposite Lashibi ECG District Office, off the Spintex Road",
                 "city": "Tema",
                 "area": "Lashibi",
                 "region": "Greater Accra",
